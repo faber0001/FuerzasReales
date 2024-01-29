@@ -1,70 +1,79 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Programa de Consulta</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-    <h1>Consulta de Posición</h1>
+    <div id="inDatos">
+        <label for="numDatos">Cuantos datos vas a consultar?</label>
+        <input type="number" id="numDatos" placeholder="Ingrese cantidad de datos">
+        <button onclick="ingresarNumDatos()">Enviar</button>
+    </div>
+    
+    <div id="inGuia" style="display: none;">
+        <label for="numGuia">Ingrese el número guía:</label>
+        <input type="number" id="numGuia" placeholder="Número guía">
+        <button onclick="ingresarNumGuia()">Enviar</button>
+    </div>
+    
+    <div id="inNum" style="display: none;">
+        <label for="num">Ingrese un número:</label>
+        <input type="number" id="num" placeholder="Número">
+        <button onclick="consultarNumero()">Enviar</button>
+    </div>
+    
+    <div id="resultados" style="display: none;">
+        <label for="resultTextArea"></label>
+        <textarea id="resultTextArea" rows="10" cols="40" readonly></textarea>
+        <div id="fuerzasResult"></div>
+    </div>
+    
+    <div id="fuerzas"></div>
+    <div id="fuerzasResultF0"></div>
+    <div id="fuerzasResultF1"></div>
+    <div id="fuerzasResultF2"></div>
+    <div id="fuerzasResultF3"></div>
+    <div id="fuerzasResultF4"></div>
+    <div id="fuerzasResultF5"></div>
+    <div id="fuerzasResultF6"></div>
+    <div id="fuerzasResultF7"></div>
+    <div id="fuerzasResultF8"></div>
+    <div id="fuerzasResultF9"></div>
+    <div id="fuerzasResultF10"></div>
+    <div id="fuerzasResultF11"></div>
+    <div id="fuerzasResultF12"></div>
+    <div id="fuerzasResultF13"></div>
+    <div id="fuerzasResultF14"></div>
+    <div id="fuerzasResultF15"></div>
+    <div id="fuerzasResultF16"></div>
+    <div id="fuerzasResultF17"></div>
+    <div id="fuerzasResultF18"></div>
+    <div id="fuerzasResultF19"></div>
+    <div id="fuerzasResultF20"></div>
+    <div id="fuerzasResultF21"></div>
+    <div id="fuerzasResultF22"></div>
+    <div id="fuerzasResultF23"></div>
+    <div id="fuerzasResultF24"></div>
+    <div id="fuerzasResultF25"></div>
+    <div id="fuerzasResultF26"></div>
+    <div id="fuerzasResultF27"></div>
+    <div id="fuerzasResultF28"></div>
+    <div id="fuerzasResultF29"></div>
+    <div id="fuerzasResultF30"></div>
+    <div id="fuerzasResultF31"></div>
+    <div id="fuerzasResultF32"></div>
+    <div id="fuerzasResultF33"></div>
+    <div id="fuerzasResultF34"></div>
+    <div id="fuerzasResultF35"></div>
+    <div id="fuerzasResultF36"></div>
+    <div id="fuerzasResultF37"></div>
 
-    <label for="caso">Caso:</label>
-    <input type="number" id="caso" placeholder="Ingrese el caso">
-
-    <label for="numeroConsulta">Número a consultar:</label>
-    <input type="number" id="numeroConsulta" placeholder="Ingrese el número">
-
-    <button onclick="consultarPosicion()">Consultar Posición</button>
-
-    <p id="posicionResultado"></p>
-
-    <p>Array FG: <span id="arrayResultado"></span></p> 
-    <!-- Secciones para mostrar los resultados de los arrays -->
-    <div id="arrayResultado"></div>
-  <div id="f0Resultados">f0:</div>
-  <div id="f1Resultados">f1</div>
-  <div id="f2Resultados">f2</div>
-  <div id="f3Resultados">f3</div>
-  <div id="f4Resultados">f4</div>
-  <div id="f5Resultados">f5</div>
-  <div id="f6Resultados">f6</div>
-  <div id="f7Resultados">f7</div>
-  <div id="f8Resultados">f8</div>
-  <div id="f9Resultados">f9</div>
-  <div id="f10Resultados">f10</div>
-  <div id="f11Resultados">f11</div>
-  <div id="f12Resultados">f12</div>
-  <div id="f13Resultados">f13</div>
-  <div id="f14Resultados">f14</div>
-  <div id="f15Resultados">f15</div>
-  <div id="f16Resultados">f16</div>
-  <div id="f17Resultados">f17</div>
-  <div id="f18Resultados">f18</div>
-  <div id="f19Resultados">f19</div>
-  <div id="f20Resultados">f20</div>
-  <div id="f21Resultados">f21</div>
-  <div id="f22Resultados">f22</div>
-  <div id="f23Resultados">f23</div>
-  <div id="f24Resultados">f24</div>
-  <div id="f25Resultados">f25</div>
-  <div id="f26Resultados">f26</div>
-  <div id="f27Resultados">f27</div>
-  <div id="f28Resultados">f28</div>
-  <div id="f29Resultados">f29</div>
-  <div id="f30Resultados">f30</div>
-  <div id="f31Resultados">f31</div>
-  <div id="f32Resultados">f32</div>
-  <div id="f33Resultados">f33</div>
-  <div id="f34Resultados">f34</div>
-  <div id="f35Resultados">f35</div>
-  <div id="f36Resultados">f36</div>
-  <div id="f37Resultados">f37</div>
-
-  <!-- ... y así sucesivamente para los demás arrays -->
+ <script src="js.js" defer></script>
  
- <!-- Área para mostrar resultados -->
-        <script src="js.js" defer></script>  
+
 </body>
-</html>
