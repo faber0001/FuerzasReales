@@ -366,10 +366,11 @@ var positionCero=fuerzas[0];
 switch(positionUno){
 
 case 0:
+          // Llama a las funciones para mostrar los arrays en el DOM
+          mostrarFuerzasArray();
          if (fuerzas.length > 1) {
               F0.unshift(positionCero);
-            // Llama a las funciones para mostrar los arrays en el DOM
-              mostrarFuerzasArray();
+           
               mostrarF0();
               console.log("Fuerzas", fuerzas);
               console.log("F0",F0);
