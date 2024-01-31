@@ -384,7 +384,7 @@ switch(positionUno){
             console.log("F0", F0);
         }
         
-        alert("Caso 0");
+        
         break;
 
     case 1:
@@ -397,7 +397,7 @@ switch(positionUno){
             console.log("F1", F1);
         }
         
-        alert("Caso 1");
+        
         break;
 
 
@@ -410,7 +410,7 @@ switch(positionUno){
               console.log("Fuerzas", fuerzas);
               console.log("F2", F2);
         }
-              alert("Caso 2");
+              
 
               break;
 
@@ -424,7 +424,7 @@ switch(positionUno){
               console.log("Fuerzas", fuerzas);
               console.log("F3", F3);
        }
-             alert("Caso 3");
+             
 
              break;
 
@@ -437,7 +437,7 @@ switch(positionUno){
                console.log("Fuerzas", fuerzas);
                console.log("F4", F4);
        }
-               alert("Caso 4");
+               
 
                break;
 
@@ -449,7 +449,7 @@ case 5:
             console.log("Fuerzas", fuerzas);
             console.log("F5", F5);
        }
-            alert("Caso 5");
+            
 
             break;
 case 6:
@@ -460,7 +460,7 @@ case 6:
            console.log("Fuerzas", fuerzas);
            console.log("F6", F6);
        }
-           alert("Caso 6");
+           
 
            break;
 
@@ -472,7 +472,7 @@ case 6:
            console.log("Fuerzas", fuerzas);
            console.log("F7", F7);
         }
-           alert("Caso 7");
+           
 
            break;
 
@@ -484,7 +484,7 @@ case 8:
            console.log("Fuerzas", fuerzas);
            console.log("F8", F8);
        }
-           alert("Caso 8");
+           
 
            break;
 
@@ -497,7 +497,7 @@ case 9:
             console.log("F9", F9);
        }
 
-            alert("Caso 9");
+            
             break;
 
 case 10:
@@ -508,7 +508,7 @@ case 10:
             console.log("Fuerzas", fuerzas);
             console.log("F10", F10);
         }
-            alert("Caso 10");
+            
 
             break;
 
@@ -520,7 +520,7 @@ case 11:
             console.log("Fuerzas", fuerzas);
             console.log("F11", F11);
         }
-            alert("Caso 11");
+            
 
             break;
 
@@ -532,7 +532,7 @@ case 12:
             console.log("Fuerzas", fuerzas);
             console.log("F12", F12);
         }
-            alert("Caso 12");
+            
 
             break;
 
@@ -545,7 +545,7 @@ case 13:
             console.log("Fuerzas", fuerzas);
             console.log("F13", F13);
         }
-            alert("Caso 13");
+            
 
             break;
 
@@ -558,7 +558,7 @@ case 14:
             console.log("Fuerzas", fuerzas);
             console.log("F14", F14);
         }
-            alert("Caso 14");
+            
 
             break;
 
@@ -571,7 +571,7 @@ case 15:
             console.log("Fuerzas", fuerzas);
             console.log("F15", F15);
         }
-            alert("Caso 15");
+            
 
             break;
 
@@ -584,7 +584,7 @@ case 16:
              console.log("Fuerzas", fuerzas);
              console.log("F16", F16);
          }
-             alert("Caso 16");
+          
 
              break;
 
@@ -597,7 +597,7 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
               console.log("Fuerzas", fuerzas);
               console.log("F17", F17);
          }
-         alert("Caso 16");
+        
 
          break;
 
@@ -609,7 +609,7 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
                 console.log("Fuerzas", fuerzas);
                 console.log("F18", F18);
             }
-            alert("Caso 18");
+        
             break;
 
 
@@ -623,7 +623,7 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
                 console.log("Fuerzas", fuerzas);
                 console.log("F19", F19);
             }
-            alert("Caso 19");
+          
             break;
 
 case 20:
@@ -634,7 +634,7 @@ case 20:
               console.log("Fuerzas", fuerzas);
               console.log("F20", F20);
           }
-              alert("Caso 20");
+       
 
               break;
   
@@ -648,7 +648,7 @@ case 21:
               console.log("Fuerzas", fuerzas);
               console.log("F21", F21);
            }
-              alert("Caso 21");
+            
 
               break;
 
@@ -661,7 +661,7 @@ case 22:
               console.log("Fuerzas", fuerzas);
               console.log("F22", F22);
           }
-              alert("Caso 22");
+           
 
               break;
 
@@ -674,7 +674,7 @@ case 23:
               console.log("Fuerzas", fuerzas);
               console.log("F23", F23);
           }
-              alert("Caso 23");
+            
 
               break;
 
@@ -687,7 +687,7 @@ case 24:
                console.log("Fuerzas", fuerzas);
                console.log("F24", F24);
             }
-               alert("Caso 24");
+              
 
                break;
 
@@ -699,7 +699,7 @@ case 25:
                console.log("Fuerzas", fuerzas);
                console.log("F25", F25);
             }
-               alert("Caso 25");
+            
 
                break;
 
@@ -712,7 +712,7 @@ case 26:
                console.log("F26", F26);
             }
 
-               alert("Caso 26");
+      
 
                break;
 
@@ -724,7 +724,7 @@ case 27:
                console.log("Fuerzas", fuerzas);
                console.log("F27", F27);
             }
-               alert("Caso 27");
+
 
                break;
 
@@ -736,7 +736,7 @@ case 28:
                console.log("Fuerzas", fuerzas);
                console.log("F28", F28);
            }
-               alert("Caso 28");
+             
 
                break;
 
@@ -749,7 +749,7 @@ case 29:
                console.log("Fuerzas", fuerzas);
                console.log("F29", F29);
             }
-               alert("Caso 29");
+               
 
                break;
 
@@ -761,7 +761,7 @@ case 30:
                console.log("Fuerzas", fuerzas);
                console.log("F30", F30);
            }
-               alert("Caso 30");
+              
 
                break;
 
@@ -773,7 +773,7 @@ case 31:
                console.log("Fuerzas", fuerzas);
                console.log("F31", F31);
             }
-               alert("Caso 31");
+        
 
                break;
 
@@ -785,7 +785,7 @@ case 32:
                console.log("Fuerzas", fuerzas);
                console.log("F32", F32);
             }
-               alert("Caso 32");
+             
 
                break;
 
@@ -797,7 +797,7 @@ case 33:
                 console.log("Fuerzas", fuerzas);
                 console.log("F33", F33);
             }
-                alert("Caso 33");
+             
 
                 break;
 
@@ -809,7 +809,7 @@ case 34:
                 console.log("Fuerzas", fuerzas);
                 console.log("F34", F34);
              }
-                alert("Caso 34");
+ 
 
                 break;
 
@@ -821,7 +821,7 @@ case 35:
                  console.log("Fuerzas", fuerzas);
                  console.log("F35", F35);
               }
-                 alert("Caso 35");
+                 
 
                  break;
 
@@ -834,7 +834,7 @@ case 36:
                  console.log("Fuerzas", fuerzas);
                  console.log("F36", F36);
               }
-                 alert("Caso 36");
+                
 
 
                  break;
@@ -847,7 +847,7 @@ case 37:
                  console.log("Fuerzas", fuerzas);
                  console.log("F37", F37);
              }
-                 alert("Caso 37");
+                 
 
                  break;
 
