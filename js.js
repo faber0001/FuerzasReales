@@ -363,34 +363,39 @@ var positionCero=fuerzas[0];
 
 switch(positionUno){
 
-case 0:
-          //llamar fucnion mostrarFkuerzasArray();
-             mostrarFuerzasArray();
-         if (fuerzas.length > 1) {
-              F0.unshift(positionCero);
-              mostrarArrayEnDOM(F0, 'fuerzasResultF0');
-              console.log("Fuerzas", fuerzas);
-              console.log("F0",F0);
-       }
-              alert("Caso 0"); 
 
-              break;
-   case 1:
-               mostrarFuerzasArray();
-           if (fuerzas.length > 1) {
-              F1.unshift(positionCero);
-              mostrarArrayEnDOM(F1, 'fuerzasResultF1');
-              mostrarArrayEnDOM(F1, '');
-              console.log("Fuerzas", fuerzas);
-              console.log("F1",F1);
-       }  
-              alert("Caso 1");
+       
+    case 0:
+        mostrarArrayEnDOM(fuerzas, 'fuerzas');
+        
+        if (fuerzas.length > 1) {
+            F0.unshift(positionCero);
+            mostrarArrayEnDOM(F0, 'fuerzasResultF0');
+            mostrarF0();
+            console.log("Fuerzas", fuerzas);
+            console.log("F0", F0);
+        }
+        
+        alert("Caso 0");
+        break;
 
-              break;
+    case 1:
+        mostrarArrayEnDOM(fuerzas, 'fuerzas');
+        
+        if (fuerzas.length > 1) {
+            F1.unshift(positionCero);
+            mostrarArrayEnDOM(F1, 'fuerzasResultF1');
+            console.log("Fuerzas", fuerzas);
+            console.log("F1", F1);
+        }
+        
+        alert("Caso 1");
+        break;
+
 
  case 2:
                //  mostrarFuerzas();
-               mostrarFuerzasArray();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
               F2.unshift(positionCero);
               mostrarArrayEnDOM(F2, 'fuerzasResultF2');
@@ -403,7 +408,7 @@ case 0:
 
  case 3:    
             //  mostrarFuerzas();
-              mostrarFuerzasArray();
+            mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
 
               F3.unshift(positionCero);
@@ -417,7 +422,7 @@ case 0:
 
    case 4: 
                //  mostrarFuerzas();
-               mostrarFuerzasArray();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F4.unshift(positionCero);
               mostrarArrayEnDOM(F4, 'fuerzasResultF4');
@@ -429,7 +434,7 @@ case 0:
                break;
 
 case 5:
-           mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F5.unshift(positionCero);
             mostrarArrayEnDOM(F5, 'fuerzasResultF5');
@@ -440,7 +445,7 @@ case 5:
 
             break;
 case 6:
-           mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
        if (fuerzas.length > 1) {
            F6.unshift(positionCero);
            mostrarArrayEnDOM(F6, 'fuerzasResultF6');
@@ -452,7 +457,7 @@ case 6:
            break;
 
  case 7:
-           mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
        if (fuerzas.length > 1) {
            F7.unshift(positionCero);
            mostrarArrayEnDOM(F7, 'fuerzasResultF7');
@@ -464,7 +469,7 @@ case 6:
            break;
 
 case 8:
-           mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
            F8.unshift(positionCero);
            mostrarArrayEnDOM(F8, 'fuerzasResultF8');
@@ -476,7 +481,7 @@ case 8:
            break;
 
 case 9:
-           mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F9.unshift(positionCero);
             mostrarArrayEnDOM(F9, 'fuerzasResultF9');
@@ -488,7 +493,7 @@ case 9:
             break;
 
 case 10:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F10.unshift(positionCero);
             mostrarArrayEnDOM(F10, 'fuerzasResultF10');
@@ -500,7 +505,7 @@ case 10:
             break;
 
 case 11:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) { 
             F11.unshift(positionCero);
             mostrarArrayEnDOM(F11, 'fuerzasResultF11');
@@ -512,7 +517,7 @@ case 11:
             break;
 
 case 12:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F12.unshift(positionCero);
             mostrarArrayEnDOM(F12, 'fuerzasResultF12');
@@ -524,7 +529,7 @@ case 12:
             break;
 
 case 13:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
             F13.unshift(positionCero);
@@ -537,7 +542,7 @@ case 13:
             break;
 
 case 14:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
             F14.unshift(positionCero);
@@ -550,7 +555,7 @@ case 14:
             break;
 
 case 15:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
             F15.unshift(positionCero);
@@ -563,7 +568,7 @@ case 15:
             break;
 
 case 16:
-             mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
 
              F16.unshift(positionCero);
@@ -576,7 +581,7 @@ case 16:
              break;
 
 case 17: 
-             mostrarFuerzasArray();
+mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
 
              F17.unshift(positionCero);
@@ -589,7 +594,7 @@ case 17:
          break;
 
  case 18:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F18.unshift(positionCero);
                 mostrarArrayEnDOM(F18, 'fuerzasResultF18');
@@ -603,7 +608,7 @@ case 17:
             
 
  case 19:
-            mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F19.unshift(positionCero);
                 mostrarArrayEnDOM(F19, 'fuerzasResultF19');
@@ -614,7 +619,7 @@ case 17:
             break;
 
 case 20:
-              mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
               F20.unshift(positionCero);
               mostrarArrayEnDOM(F20, 'fuerzasResultF20');
@@ -627,7 +632,7 @@ case 20:
   
 
 case 21:
-              mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F21.unshift(positionCero);
@@ -640,7 +645,7 @@ case 21:
               break;
 
 case 22:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F22.unshift(positionCero);
@@ -653,7 +658,7 @@ case 22:
               break;
 
 case 23:
-              mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F23.unshift(positionCero);
@@ -666,7 +671,7 @@ case 23:
               break;
 
 case 24:
-              mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
 
                F24.unshift(positionCero);
@@ -679,7 +684,7 @@ case 24:
                break;
 
 case 25:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F25.unshift(positionCero);
                mostrarArrayEnDOM(F25, 'fuerzasResultF25');
@@ -691,7 +696,7 @@ case 25:
                break;
 
 case 26:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F26.unshift(positionCero);
                mostrarArrayEnDOM(F26, 'fuerzasResultF26');
@@ -704,7 +709,7 @@ case 26:
                break;
 
 case 27:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F27.unshift(positionCero);
                mostrarArrayEnDOM(F27, 'fuerzasResultF27');
@@ -716,7 +721,7 @@ case 27:
                break;
 
 case 28:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F28.unshift(positionCero);
                mostrarArrayEnDOM(F28, 'fuerzasResultF28');
@@ -728,7 +733,7 @@ case 28:
                break;
 
 case 29:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
 
                F29.unshift(positionCero);
@@ -741,7 +746,7 @@ case 29:
                break;
 
 case 30:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F30.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
@@ -753,7 +758,7 @@ case 30:
                break;
 
 case 31:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F31.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
@@ -765,7 +770,7 @@ case 31:
                break;
 
 case 32:
-               mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F32.unshift(positionCero);
                mostrarArrayEnDOM(F32, 'fuerzasResultF32');
@@ -777,7 +782,7 @@ case 32:
                break;
 
 case 33:
-                mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F33.unshift(positionCero);
                 mostrarArrayEnDOM(F33, 'fuerzasResultF33');
@@ -789,7 +794,7 @@ case 33:
                 break;
 
 case 34:
-                mostrarFuerzasArray();
+    mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F34.unshift(positionCero);
                 mostrarArrayEnDOM(F34, 'fuerzasResultF34');
@@ -801,7 +806,7 @@ case 34:
                 break;
 
 case 35:
-                 mostrarFuerzasArray();
+                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F35.unshift(positionCero);
                  mostrarArrayEnDOM(F35, 'fuerzasResultF35');
@@ -813,7 +818,8 @@ case 35:
                  break;
 
 case 36:
-                 mostrarFuerzasArray();
+                 
+                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F36.unshift(positionCero);
                  mostrarArrayEnDOM(F36, 'fuerzasResultF36');
@@ -822,10 +828,11 @@ case 36:
               }
                  alert("Caso 36");
 
+
                  break;
 
 case 37:
-                 mostrarFuerzasArray();
+                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F37.unshift(positionCero);
                  mostrarArrayEnDOM(F37, 'fuerzasResultF37');
@@ -844,3 +851,5 @@ case 37:
 }
 
 
+             
+    
