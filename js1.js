@@ -15,7 +15,7 @@ function prediccionNumeros() {
     let caso=PrediccionNum;
     switch (PrediccionNum) {
         case 0:
-            alert("caso prediccion 0");
+        
             if (F0.length === 0) {
                 console.log("El array F1 está vacío");
             }
@@ -40,7 +40,7 @@ function prediccionNumeros() {
             console.log("Prediccion 0 = ", numPrediccion0);
             break;  
         case 1:
-               alert("caso prediccion 1");
+               
                 if (F1.length === 0) {
                     console.log("El array F1 está vacío");
                     }
@@ -56,7 +56,7 @@ function prediccionNumeros() {
                     console.log("Probabilidad del 1  = ", numPrediccion1);
                     break;  
          case 2:
-                    alert("caso prediccion 0");
+                
                     if (F2.length === 0) {
                         console.log("El array F2 está vacío");
                         }
@@ -75,7 +75,7 @@ function prediccionNumeros() {
 
 // Caso 3
 case 3:
-    alert(`caso prediccion 3`);
+    
     if (F3.length === 0) {
         console.log(`El array F3 está vacío`);
     }
@@ -93,7 +93,7 @@ case 3:
 
 // Caso 4
 case 4:
-    alert(`caso prediccion 4`);
+    
     if (F4.length === 0) {
         console.log(`El array F4 está vacío`);
     }
@@ -111,7 +111,7 @@ case 4:
 
 // Caso 5
 case 5:
-    alert(`caso prediccion 5`);
+
     if (F5.length === 0) {
         console.log(`El array F5 está vacío`);
     }
@@ -129,7 +129,7 @@ case 5:
 
 // Caso 6
 case 6:
-    alert(`caso prediccion 6`);
+    
     if (F6.length === 0) {
         console.log(`El array F6 está vacío`);
     }
@@ -147,7 +147,7 @@ case 6:
 
 // Caso 7
 case 7:
-    alert(`caso prediccion 7`);
+
     if (F7.length === 0) {
         console.log(`El array F7 está vacío`);
     }
@@ -165,7 +165,7 @@ case 7:
 
 // Caso 8
 case 8:
-    alert(`caso prediccion 8`);
+
     if (F8.length === 0) {
         console.log(`El array F8 está vacío`);
     }
@@ -183,7 +183,7 @@ case 8:
 
 // Caso 9
 case 9:
-    alert(`caso prediccion 9`);
+    
     if (F9.length === 0) {
         console.log(`El array F9 está vacío`);
     }
@@ -204,7 +204,7 @@ case 9:
 
 // Caso 10
 case 10:
-    alert(`caso prediccion 10`);
+    
     if (F10.length === 0) {
         console.log(`El array F10 está vacío`);
     }
@@ -222,7 +222,7 @@ case 10:
 
 // Caso 11
 case 11:
-    alert(`caso prediccion 11`);
+    
     if (F11.length === 0) {
         console.log(`El array F11 está vacío`);
     }
@@ -240,7 +240,7 @@ case 11:
 
 // Caso 12
 case 12:
-    alert(`caso prediccion 12`);
+
     if (F12.length === 0) {
         console.log(`El array F12 está vacío`);
     }
@@ -258,7 +258,7 @@ case 12:
 
 // Caso 13
 case 13:
-    alert(`caso prediccion 13`);
+
     if (F13.length === 0) {
         console.log(`El array F13 está vacío`);
     }
@@ -276,7 +276,7 @@ case 13:
 
 // Caso 14
 case 14:
-    alert(`caso prediccion 14`);
+    
     if (F14.length === 0) {
         console.log(`El array F14 está vacío`);
     }
@@ -294,7 +294,7 @@ case 14:
 
 // Caso 15
 case 15:
-    alert(`caso prediccion 15`);
+    
     if (F15.length === 0) {
         console.log(`El array F15 está vacío`);
     }
@@ -312,7 +312,7 @@ case 15:
 
 // Caso 16
 case 16:
-    alert(`caso prediccion 15`);
+    
     if (F16.length === 0) {
         console.log(`El array F15 está vacío`);
     }
@@ -330,10 +330,10 @@ case 16:
 
 // Caso 17
 case 17:
-    let caso=17;
-    alert(`caso prediccion ${caso}`);
+    
+    
     if (F17.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F17 está vacío`);
     }
     let numPrediccion17 = [];
     for (let i = 0; i < F17.length; i++) {
@@ -344,13 +344,12 @@ case 17:
         mostrarArrayEnDOM(numPrediccion17, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion17);
+    console.log(`Probabilidad para caso 17 = `, numPrediccion17);
     break;
 
 // Caso 18
 case 18:
     
-    alert(`caso prediccion 18`);
     if (F18.length === 0) {
         console.log(`El array F18 está vacío`);
     }
@@ -368,7 +367,7 @@ case 18:
 
 // Caso 19
 case 19:
-    alert(`caso prediccion 10`);
+    
     if (F19.length === 0) {
         console.log(`El array F19 está vacío`);
     }
@@ -389,7 +388,7 @@ case 19:
 
 // Caso 20
 case 20:
-    alert(`caso prediccion 20`);
+    
     if (F20.length === 0) {
         console.log(`El array F20 está vacío`);
     }
@@ -407,7 +406,7 @@ case 20:
 
 // Caso 21
 case 21:
-    alert(`caso prediccion 21`);
+    
     if (F21.length === 0) {
         console.log(`El array F21 está vacío`);
     }
@@ -425,7 +424,7 @@ case 21:
 
 // Caso 22
 case 22:
-    alert(`caso prediccion 22`);
+    
     if (F22.length === 0) {
         console.log(`El array F22 está vacío`);
     }
@@ -443,7 +442,7 @@ case 22:
 
 // Caso 23
 case 23:
-    alert(`caso prediccion 23`);
+    
     if (F23.length === 0) {
         console.log(`El array F23 está vacío`);
     }
@@ -461,7 +460,7 @@ case 23:
 
 // Caso 24
 case 24:
-    alert(`caso prediccion 24`);
+    
     if (F24.length === 0) {
         console.log(`El array F24 está vacío`);
     }
@@ -479,7 +478,7 @@ case 24:
 
 // Caso 25
 case 25:
-    alert(`caso prediccion 25`);
+    
     if (F25.length === 0) {
         console.log(`El array F25 está vacío`);
     }
@@ -497,7 +496,7 @@ case 25:
 
 // Caso 26
 case 26:
-    alert(`caso prediccion 26`);
+    
     if (F26.length === 0) {
         console.log(`El array F26 está vacío`);
     }
@@ -515,7 +514,7 @@ case 26:
 
 // Caso 27
 case 27:
-    alert(`caso prediccion 27`);
+    
     if (F27.length === 0) {
         console.log(`El array F27 está vacío`);
     }
@@ -533,7 +532,7 @@ case 27:
 
 // Caso 28
 case 28:
-    alert(`caso prediccion 28`);
+
     if (F28.length === 0) {
         console.log(`El array F28 está vacío`);
     }
@@ -551,7 +550,7 @@ case 28:
 
 // Caso 29
 case 29:
-    alert(`caso prediccion 29`);
+    
     if (F29.length === 0) {
         console.log(`El array F29 está vacío`);
     }
@@ -572,7 +571,7 @@ case 29:
 
 // Caso 30
 case 30:
-    alert(`caso prediccion 30`);
+    
     if (F30.length === 0) {
         console.log(`El array F30 está vacío`);
     }
@@ -590,7 +589,7 @@ case 30:
 
 // Caso 31
 case 31:
-    alert(`caso prediccion 31`);
+
     if (F31.length === 0) {
         console.log(`El array F31 está vacío`);
     }
@@ -608,7 +607,7 @@ case 31:
 
 // Caso 32
 case 32:
-    alert(`caso prediccion 32`);
+    
     if (F32.length === 0) {
         console.log(`El array F32 está vacío`);
     }
@@ -626,7 +625,7 @@ case 32:
 
 // Caso 33
 case 33:
-    alert(`caso prediccion 33`);
+    
     if (F33.length === 0) {
         console.log(`El array F33 está vacío`);
     }
@@ -644,7 +643,7 @@ case 33:
 
 // Caso 34
 case 34:
-    alert(`caso prediccion 34`);
+    
     if (F34.length === 0) {
         console.log(`El array F34 está vacío`);
     }
@@ -662,7 +661,7 @@ case 34:
 
 // Caso 35
 case 35:
-    alert(`caso prediccion 35`);
+    
     if (F35.length === 0) {
         console.log(`El array F35 está vacío`);
     }
@@ -680,7 +679,7 @@ case 35:
 
 // Caso 36
 case 36:
-    alert(`caso prediccion 36`);
+
     if (F36.length === 0) {
         console.log(`El array F36 está vacío`);
     }
@@ -698,7 +697,7 @@ case 36:
 
 // Caso 37
 case 37:
-    alert(`caso prediccion 37`);
+    
     if (F37.length === 0) {
         console.log(`El array F37 está vacío`);
     }
