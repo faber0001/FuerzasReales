@@ -12,12 +12,12 @@ function mostrarArrayEnDOM(array, elementId) {
 //prediccion probabiidad 
 function prediccionNumeros() {
     console.log("PrediccionNum", PrediccionNum);
-
+    let caso=PrediccionNum;
     switch (PrediccionNum) {
         case 0:
             alert("caso prediccion 0");
             if (F0.length === 0) {
-                console.log("El array F0 está vacío");
+                console.log("El array F1 está vacío");
             }
 
             // Declarar numPrediccion dentro del caso para reiniciarlo
@@ -37,12 +37,12 @@ function prediccionNumeros() {
                 // Pausar la ejecución para permitir que la interfaz de usuario se actualice
                 setTimeout(() => {}, 0);
             }
-            console.log("Prediccion = ", numPrediccion0);
+            console.log("Prediccion 0 = ", numPrediccion0);
             break;  
         case 1:
                alert("caso prediccion 0");
                 if (F1.length === 0) {
-                    console.log("El array F0 está vacío");
+                    console.log("El array F1 está vacío");
                     }
                     let numPrediccion1 = [];
                     for (let i = 0; i < F1.length; i++) {
@@ -53,12 +53,12 @@ function prediccionNumeros() {
                          mostrarArrayEnDOM(numPrediccion1, 'PROBABILIDAD');
                          setTimeout(() => {}, 0);
                     }
-                    console.log("Probabilidad es:  = ", numPrediccion1);
+                    console.log("Probabilidad del 1  = ", numPrediccion1);
                     break;  
          case 2:
                     alert("caso prediccion 0");
                     if (F2.length === 0) {
-                        console.log("El array F0 está vacío");
+                        console.log("El array F2 está vacío");
                         }
                         let numPrediccion2 = [];
                         for (let i = 0; i < F2.length; i++) {
@@ -69,15 +69,15 @@ function prediccionNumeros() {
                              mostrarArrayEnDOM(numPrediccion2, 'PROBABILIDAD');
                              setTimeout(() => {}, 0);
                          }
-                         console.log("Probabilidad es:  = ", numPrediccion2);
+                         console.log("Probabilidad del 2 :  = ", numPrediccion2);
                          break; 
         // ...
 
 // Caso 3
 case 3:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 3`);
     if (F3.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F3 está vacío`);
     }
     let numPrediccion3 = [];
     for (let i = 0; i < F3.length; i++) {
@@ -88,14 +88,14 @@ case 3:
         mostrarArrayEnDOM(numPrediccion3, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion3);
+    console.log("Probabilidad del 3:  = ", numPrediccion3);
     break;
 
 // Caso 4
 case 4:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 4`);
     if (F4.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F4 está vacío`);
     }
     let numPrediccion4 = [];
     for (let i = 0; i < F4.length; i++) {
@@ -106,14 +106,14 @@ case 4:
         mostrarArrayEnDOM(numPrediccion4, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion4);
+    console.log(`Probabilidad del 4 = `, numPrediccion4);
     break;
 
 // Caso 5
 case 5:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 5`);
     if (F5.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F5 está vacío`);
     }
     let numPrediccion5 = [];
     for (let i = 0; i < F5.length; i++) {
@@ -124,14 +124,14 @@ case 5:
         mostrarArrayEnDOM(numPrediccion5, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion5);
+    console.log(`Probabilidad del 5 = `, numPrediccion5);
     break;
 
 // Caso 6
 case 6:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 6`);
     if (F6.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F6 está vacío`);
     }
     let numPrediccion6 = [];
     for (let i = 0; i < F6.length; i++) {
@@ -142,14 +142,14 @@ case 6:
         mostrarArrayEnDOM(numPrediccion6, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion6);
+    console.log(`Probabilidad del 6 = `, numPrediccion6);
     break;
 
 // Caso 7
 case 7:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 7`);
     if (F7.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F7 está vacío`);
     }
     let numPrediccion7 = [];
     for (let i = 0; i < F7.length; i++) {
@@ -160,14 +160,14 @@ case 7:
         mostrarArrayEnDOM(numPrediccion7, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion7);
+    console.log(`Probabilidad del 7 = `, numPrediccion7);
     break;
 
 // Caso 8
 case 8:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 8`);
     if (F8.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F8 está vacío`);
     }
     let numPrediccion8 = [];
     for (let i = 0; i < F8.length; i++) {
@@ -178,14 +178,14 @@ case 8:
         mostrarArrayEnDOM(numPrediccion8, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion8);
+    console.log(`Probabilidad numero 8 = `, numPrediccion8);
     break;
 
 // Caso 9
 case 9:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 9`);
     if (F9.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F9 está vacío`);
     }
     let numPrediccion9 = [];
     for (let i = 0; i < F9.length; i++) {
@@ -196,7 +196,7 @@ case 9:
         mostrarArrayEnDOM(numPrediccion9, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion9);
+    console.log(`Probabilidad para caso 9 = `, numPrediccion9);
     break;
 
 // ...
@@ -204,9 +204,9 @@ case 9:
 
 // Caso 10
 case 10:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 10`);
     if (F10.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F10 está vacío`);
     }
     let numPrediccion10 = [];
     for (let i = 0; i < F10.length; i++) {
@@ -217,14 +217,14 @@ case 10:
         mostrarArrayEnDOM(numPrediccion10, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion10);
+    console.log(`Probabilidad para caso 10 = `, numPrediccion10);
     break;
 
 // Caso 11
 case 11:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 11`);
     if (F11.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F11 está vacío`);
     }
     let numPrediccion11 = [];
     for (let i = 0; i < F11.length; i++) {
@@ -235,14 +235,14 @@ case 11:
         mostrarArrayEnDOM(numPrediccion11, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion11);
+    console.log(`Probabilidad caso 11 = `, numPrediccion11);
     break;
 
 // Caso 12
 case 12:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 12`);
     if (F12.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F12 está vacío`);
     }
     let numPrediccion12 = [];
     for (let i = 0; i < F12.length; i++) {
@@ -253,14 +253,14 @@ case 12:
         mostrarArrayEnDOM(numPrediccion12, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion12);
+    console.log(`Probabilidad para caso 12 = `, numPrediccion12);
     break;
 
 // Caso 13
 case 13:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 13`);
     if (F13.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F13 está vacío`);
     }
     let numPrediccion13 = [];
     for (let i = 0; i < F13.length; i++) {
@@ -271,14 +271,14 @@ case 13:
         mostrarArrayEnDOM(numPrediccion13, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion13);
+    console.log(`Probabilidad para caso 13 = `, numPrediccion13);
     break;
 
 // Caso 14
 case 14:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 14`);
     if (F14.length === 0) {
-        consolelog(`El array F${caso} está vacío`);
+        console.log(`El array F14 está vacío`);
     }
     let numPrediccion14 = [];
     for (let i = 0; i < F14.length; i++) {
@@ -289,14 +289,14 @@ case 14:
         mostrarArrayEnDOM(numPrediccion14, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion14);
+    console.log(`Probabilidad para caso 14 = `, numPrediccion14);
     break;
 
 // Caso 15
 case 15:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 15`);
     if (F15.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F15 está vacío`);
     }
     let numPrediccion15 = [];
     for (let i = 0; i < F15.length; i++) {
@@ -307,14 +307,14 @@ case 15:
         mostrarArrayEnDOM(numPrediccion15, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion15);
+    console.log(`Probabilidad para caso 15 = `, numPrediccion15);
     break;
 
 // Caso 16
 case 16:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 15`);
     if (F16.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F15 está vacío`);
     }
     let numPrediccion16 = [];
     for (let i = 0; i < F16.length; i++) {
@@ -325,11 +325,12 @@ case 16:
         mostrarArrayEnDOM(numPrediccion16, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion16);
+    console.log(`Probabilidad para caso 15 = `, numPrediccion16);
     break;
 
 // Caso 17
 case 17:
+    let caso=17;
     alert(`caso prediccion ${caso}`);
     if (F17.length === 0) {
         console.log(`El array F${caso} está vacío`);
@@ -348,9 +349,10 @@ case 17:
 
 // Caso 18
 case 18:
-    alert(`caso prediccion ${caso}`);
+    
+    alert(`caso prediccion 18`);
     if (F18.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F18 está vacío`);
     }
     let numPrediccion18 = [];
     for (let i = 0; i < F18.length; i++) {
@@ -361,14 +363,14 @@ case 18:
         mostrarArrayEnDOM(numPrediccion18, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion18);
+    console.log(`Probabilidad para caso 17 = `, numPrediccion18);
     break;
 
 // Caso 19
 case 19:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 10`);
     if (F19.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F19 está vacío`);
     }
     let numPrediccion19 = [];
     for (let i = 0; i < F19.length; i++) {
@@ -379,7 +381,7 @@ case 19:
         mostrarArrayEnDOM(numPrediccion19, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion19);
+    console.log(`Probabilidad para caso 10 = `, numPrediccion19);
     break;
 
 // ...
@@ -387,9 +389,9 @@ case 19:
 
 // Caso 20
 case 20:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 20`);
     if (F20.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F20 está vacío`);
     }
     let numPrediccion20 = [];
     for (let i = 0; i < F20.length; i++) {
@@ -400,14 +402,14 @@ case 20:
         mostrarArrayEnDOM(numPrediccion20, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion20);
+    console.log(`Probabilidad para caso 20 = `, numPrediccion20);
     break;
 
 // Caso 21
 case 21:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 21`);
     if (F21.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F21 está vacío`);
     }
     let numPrediccion21 = [];
     for (let i = 0; i < F21.length; i++) {
@@ -418,14 +420,14 @@ case 21:
         mostrarArrayEnDOM(numPrediccion21, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion21);
+    console.log(`Probabilidad para caso 21 = `, numPrediccion21);
     break;
 
 // Caso 22
 case 22:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 22`);
     if (F22.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F22 está vacío`);
     }
     let numPrediccion22 = [];
     for (let i = 0; i < F22.length; i++) {
@@ -436,14 +438,14 @@ case 22:
         mostrarArrayEnDOM(numPrediccion22, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion22);
+    console.log(`Probabilidad para caso 22 = `, numPrediccion22);
     break;
 
 // Caso 23
 case 23:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 23`);
     if (F23.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F23 está vacío`);
     }
     let numPrediccion23 = [];
     for (let i = 0; i < F23.length; i++) {
@@ -454,14 +456,14 @@ case 23:
         mostrarArrayEnDOM(numPrediccion23, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion23);
+    console.log(`Probabilidad para caso 23 = `, numPrediccion23);
     break;
 
 // Caso 24
 case 24:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 24`);
     if (F24.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F24 está vacío`);
     }
     let numPrediccion24 = [];
     for (let i = 0; i < F24.length; i++) {
@@ -472,14 +474,14 @@ case 24:
         mostrarArrayEnDOM(numPrediccion24, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion24);
+    console.log(`Probabilidad para caso 24 = `, numPrediccion24);
     break;
 
 // Caso 25
 case 25:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 25`);
     if (F25.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F25 está vacío`);
     }
     let numPrediccion25 = [];
     for (let i = 0; i < F25.length; i++) {
@@ -490,14 +492,14 @@ case 25:
         mostrarArrayEnDOM(numPrediccion25, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion25);
+    console.log(`Probabilidad para caso 25 = `, numPrediccion25);
     break;
 
 // Caso 26
 case 26:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 26`);
     if (F26.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F26 está vacío`);
     }
     let numPrediccion26 = [];
     for (let i = 0; i < F26.length; i++) {
@@ -508,14 +510,14 @@ case 26:
         mostrarArrayEnDOM(numPrediccion26, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion26);
+    console.log(`Probabilidad para caso 26 = `, numPrediccion26);
     break;
 
 // Caso 27
 case 27:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 27`);
     if (F27.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F27 está vacío`);
     }
     let numPrediccion27 = [];
     for (let i = 0; i < F27.length; i++) {
@@ -526,14 +528,14 @@ case 27:
         mostrarArrayEnDOM(numPrediccion27, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion27);
+    console.log(`Probabilidad para caso 27 = `, numPrediccion27);
     break;
 
 // Caso 28
 case 28:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 28`);
     if (F28.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F28 está vacío`);
     }
     let numPrediccion28 = [];
     for (let i = 0; i < F28.length; i++) {
@@ -544,14 +546,14 @@ case 28:
         mostrarArrayEnDOM(numPrediccion28, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion28);
+    console.log(`Probabilidad para caso 28 = `, numPrediccion28);
     break;
 
 // Caso 29
 case 29:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 29`);
     if (F29.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F29 está vacío`);
     }
     let numPrediccion29 = [];
     for (let i = 0; i < F29.length; i++) {
@@ -562,7 +564,7 @@ case 29:
         mostrarArrayEnDOM(numPrediccion29, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion29);
+    console.log(`Probabilidad para caso 29 = `, numPrediccion29);
     break;
 
 // ...
@@ -570,9 +572,9 @@ case 29:
 
 // Caso 30
 case 30:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 30`);
     if (F30.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F30 está vacío`);
     }
     let numPrediccion30 = [];
     for (let i = 0; i < F30.length; i++) {
@@ -583,14 +585,14 @@ case 30:
         mostrarArrayEnDOM(numPrediccion30, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion30);
+    console.log(`Probabilidad para caso 30 = `, numPrediccion30);
     break;
 
 // Caso 31
 case 31:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 31`);
     if (F31.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F31 está vacío`);
     }
     let numPrediccion31 = [];
     for (let i = 0; i < F31.length; i++) {
@@ -601,14 +603,14 @@ case 31:
         mostrarArrayEnDOM(numPrediccion31, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion31);
+    console.log(`Probabilidad para caso 31 = `, numPrediccion31);
     break;
 
 // Caso 32
 case 32:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 32`);
     if (F32.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F32 está vacío`);
     }
     let numPrediccion32 = [];
     for (let i = 0; i < F32.length; i++) {
@@ -619,14 +621,14 @@ case 32:
         mostrarArrayEnDOM(numPrediccion32, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion32);
+    console.log(`Probabilidad para caso 32 = `, numPrediccion32);
     break;
 
 // Caso 33
 case 33:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 33`);
     if (F33.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F33 está vacío`);
     }
     let numPrediccion33 = [];
     for (let i = 0; i < F33.length; i++) {
@@ -637,14 +639,14 @@ case 33:
         mostrarArrayEnDOM(numPrediccion33, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion33);
+    console.log(`Probabilidad para caso 33 = `, numPrediccion33);
     break;
 
 // Caso 34
 case 34:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 34`);
     if (F34.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F34 está vacío`);
     }
     let numPrediccion34 = [];
     for (let i = 0; i < F34.length; i++) {
@@ -655,14 +657,14 @@ case 34:
         mostrarArrayEnDOM(numPrediccion34, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion34);
+    console.log(`Probabilidad para caso 34 = `, numPrediccion34);
     break;
 
 // Caso 35
 case 35:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 35`);
     if (F35.length === 0) {
-        consolelog(`El array F${caso} está vacío`);
+        console.log(`El array F35 está vacío`);
     }
     let numPrediccion35 = [];
     for (let i = 0; i < F35.length; i++) {
@@ -673,14 +675,14 @@ case 35:
         mostrarArrayEnDOM(numPrediccion35, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion35);
+    console.log(`Probabilidad para caso 35 = `, numPrediccion35);
     break;
 
 // Caso 36
 case 36:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 36`);
     if (F36.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F36 está vacío`);
     }
     let numPrediccion36 = [];
     for (let i = 0; i < F36.length; i++) {
@@ -691,14 +693,14 @@ case 36:
         mostrarArrayEnDOM(numPrediccion36, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion36);
+    console.log(`Probabilidad para caso 36 = `, numPrediccion36);
     break;
 
 // Caso 37
 case 37:
-    alert(`caso prediccion ${caso}`);
+    alert(`caso prediccion 37`);
     if (F37.length === 0) {
-        console.log(`El array F${caso} está vacío`);
+        console.log(`El array F37 está vacío`);
     }
     let numPrediccion37 = [];
     for (let i = 0; i < F37.length; i++) {
@@ -709,7 +711,7 @@ case 37:
         mostrarArrayEnDOM(numPrediccion37, 'PROBABILIDAD');
         setTimeout(() => {}, 0);
     }
-    console.log(`Probabilidad para caso ${caso} = `, numPrediccion37);
+    console.log(`Probabilidad para caso 37 = `, numPrediccion37);
     break;
 
 // ...
