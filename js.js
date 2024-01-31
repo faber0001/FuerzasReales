@@ -1,6 +1,7 @@
 
 var cantidadDatos;
 var numGuia;
+let PrediccionNum ;
 var resultados = [];
 var fuerzas = [];
 let F0 = [],F1 = [],F2 = [],F3 = [],F4 = [],F5 = [],F6 = [],F7 = [],F8 = [],F9 = [],F10 = [],F11 = [],F12 = [],F13 = [],F14 = [],F15 = [],F16 = [],F17 = [],F18 = [],F19 = [],F20 = [],F21 = [],F22 = [],F23 = [],F24 = [],F25 = [],F26 = [],F27 = [],F28 = [],F29 = [],F30 = [],F31 = [],F32 = [],F33 = [],F34 = [],F35 = [],F36 = [],F37 = [];
@@ -117,8 +118,10 @@ function ingresarNumGuia() {
 
 
 function consultarNumero() {
+    numPrediccion = [];  // Limpiar el array cada vez que se consulta un nuevo número
     var numInput = document.getElementById("num");
     var inNum = parseInt(numInput.value);
+     
 
    
     // Verificar si el valor está dentro del rango deseado (0 a 37)
@@ -130,7 +133,10 @@ function consultarNumero() {
         // Salir de la función
         return;
     }
+    PrediccionNum=inNum;
+    
 
+      
     resultados.push(`Número Guía: ${numGuia}, Número Consultado: ${inNum}`);
 
     // Utiliza el valor de numGuia para realizar acciones según el caso
@@ -344,6 +350,7 @@ case 37:
     fuerzasReales();
     // Limpiar el contenido de la caja de texto después de procesar la información
     numInput.value = "";
+    prediccionNumeros();
 }
 
 
@@ -371,7 +378,8 @@ switch(positionUno){
         if (fuerzas.length > 1) {
             F0.unshift(positionCero);
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
-            mostrarF0();
+           
+            // Llamas a la función para ejecutar la predicción según el valor de PrediccionNum
             console.log("Fuerzas", fuerzas);
             console.log("F0", F0);
         }
