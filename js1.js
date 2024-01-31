@@ -40,7 +40,7 @@ function prediccionNumeros() {
             console.log("Prediccion 0 = ", numPrediccion0);
             break;  
         case 1:
-               alert("caso prediccion 0");
+               alert("caso prediccion 1");
                 if (F1.length === 0) {
                     console.log("El array F1 está vacío");
                     }
