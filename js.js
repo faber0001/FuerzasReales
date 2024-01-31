@@ -332,9 +332,7 @@ case 37:
 
     // Muestra los resultados en el textarea
     document.getElementById("resultTextArea").value = resultados.join("\n");
-
-    // Muestra el array fuerzas en tiempo real
-   // mostrarFuerzas();
+   
 
     if (resultados.length < cantidadDatos) {
         // Si aún quedan consultas, limpia la caja de número y continúa
@@ -366,476 +364,483 @@ var positionCero=fuerzas[0];
 switch(positionUno){
 
 case 0:
+          //llamar fucnion mostrarFkuerzasArray();
+             mostrarFuerzasArray();
          if (fuerzas.length > 1) {
               F0.unshift(positionCero);
-            // Llama a las funciones para mostrar los arrays en el DOM
-              mostrarFuerzasArray();
-              mostrarF0();
+              mostrarArrayEnDOM(F0, 'fuerzasResultF0');
               console.log("Fuerzas", fuerzas);
               console.log("F0",F0);
        }
-              alert("Caso 0");
+              alert("Caso 0"); 
+
               break;
    case 1:
+               mostrarFuerzasArray();
            if (fuerzas.length > 1) {
               F1.unshift(positionCero);
-              mostrarFuerzasArray();
+              mostrarArrayEnDOM(F1, 'fuerzasResultF1');
+              mostrarArrayEnDOM(F1, '');
               console.log("Fuerzas", fuerzas);
               console.log("F1",F1);
        }  
               alert("Caso 1");
+
               break;
-          // Agrega más casos según sea necesario
+
  case 2:
+               //  mostrarFuerzas();
+               mostrarFuerzasArray();
            if (fuerzas.length > 1) {
               F2.unshift(positionCero);
-           //  mostrarFuerzas();
-              mostrarFuerzasArray();
+              mostrarArrayEnDOM(F2, 'fuerzasResultF2');
               console.log("Fuerzas", fuerzas);
               console.log("F2", F2);
         }
-           alert("Caso 2");
-           break;
+              alert("Caso 2");
 
- case 3:
+              break;
+
+ case 3:    
+            //  mostrarFuerzas();
+              mostrarFuerzasArray();
          if (fuerzas.length > 1) {
-            F3.unshift(positionCero);
-          //  mostrarFuerzas();
-            mostrarFuerzasArray();
-            console.log("Fuerzas", fuerzas);
-            console.log("F3", F3);
-       }
-       alert("Caso 3");
-       break;
 
-   case 4:
-           if (fuerzas.length > 1) {
-           F4.unshift(positionCero);
-         //  mostrarFuerzas();
-           mostrarFuerzasArray();
-           console.log("Fuerzas", fuerzas);
-           console.log("F4", F4);
+              F3.unshift(positionCero);
+              mostrarArrayEnDOM(F3, 'fuerzasResultF3');
+              console.log("Fuerzas", fuerzas);
+              console.log("F3", F3);
        }
-       alert("Caso 4");
-       break;
+             alert("Caso 3");
+
+             break;
+
+   case 4: 
+               //  mostrarFuerzas();
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F4.unshift(positionCero);
+              mostrarArrayEnDOM(F4, 'fuerzasResultF4');
+               console.log("Fuerzas", fuerzas);
+               console.log("F4", F4);
+       }
+               alert("Caso 4");
+
+               break;
 
 case 5:
-        if (fuerzas.length > 1) {
-           F5.unshift(positionCero);
            mostrarFuerzasArray();
-          // mostrarFuerzas();
-           console.log("Fuerzas", fuerzas);
-           console.log("F5", F5);
+        if (fuerzas.length > 1) {
+            F5.unshift(positionCero);
+            mostrarArrayEnDOM(F5, 'fuerzasResultF5');
+            console.log("Fuerzas", fuerzas);
+            console.log("F5", F5);
        }
-       alert("Caso 5");
-       break;
+            alert("Caso 5");
+
+            break;
 case 6:
+           mostrarFuerzasArray();
        if (fuerzas.length > 1) {
-          F6.unshift(positionCero);
-          mostrarFuerzasArray();
-        //  mostrarFuerzas();
-          console.log("Fuerzas", fuerzas);
-          console.log("F6", F6);
+           F6.unshift(positionCero);
+           mostrarArrayEnDOM(F6, 'fuerzasResultF6');
+           console.log("Fuerzas", fuerzas);
+           console.log("F6", F6);
        }
-       alert("Caso 6");
-       break;
+           alert("Caso 6");
+
+           break;
 
  case 7:
+           mostrarFuerzasArray();
        if (fuerzas.length > 1) {
            F7.unshift(positionCero);
-           mostrarFuerzasArray();
-         //  mostrarFuerzas();
+           mostrarArrayEnDOM(F7, 'fuerzasResultF7');
            console.log("Fuerzas", fuerzas);
            console.log("F7", F7);
-       }
-       alert("Caso 7");
-       break;
+        }
+           alert("Caso 7");
+
+           break;
 
 case 8:
-if (fuerzas.length > 1) {
-   F8.unshift(positionCero);
-   mostrarFuerzasArray();
- //  mostrarFuerzas();
-   console.log("Fuerzas", fuerzas);
-   console.log("F8", F8);
-}
-alert("Caso 8");
-break;
+           mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+           F8.unshift(positionCero);
+           mostrarArrayEnDOM(F8, 'fuerzasResultF8');
+           console.log("Fuerzas", fuerzas);
+           console.log("F8", F8);
+       }
+           alert("Caso 8");
+
+           break;
 
 case 9:
-if (fuerzas.length > 1) {
-   F9.unshift(positionCero);
-  // mostrarFuerzas();
-   mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F9", F9);
-}
-alert("Caso 9");
-break;
+           mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+            F9.unshift(positionCero);
+            mostrarArrayEnDOM(F9, 'fuerzasResultF9');
+            console.log("Fuerzas", fuerzas);
+            console.log("F9", F9);
+       }
+
+            alert("Caso 9");
+            break;
 
 case 10:
-if (fuerzas.length > 1) {
-   F10.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F10", F10);
-}
-alert("Caso 10");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+            F10.unshift(positionCero);
+            mostrarArrayEnDOM(F10, 'fuerzasResultF10');
+            console.log("Fuerzas", fuerzas);
+            console.log("F10", F10);
+        }
+            alert("Caso 10");
+
+            break;
 
 case 11:
-if (fuerzas.length > 1) {
-   F11.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F11", F11);
-}
-alert("Caso 11");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) { 
+            F11.unshift(positionCero);
+            mostrarArrayEnDOM(F11, 'fuerzasResultF11');
+            console.log("Fuerzas", fuerzas);
+            console.log("F11", F11);
+        }
+            alert("Caso 11");
+
+            break;
 
 case 12:
-if (fuerzas.length > 1) {
-   F12.unshift(positionCero);
- //  mostrarFuerzas();
-   mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F12", F12);
-}
-alert("Caso 12");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+            F12.unshift(positionCero);
+            mostrarArrayEnDOM(F12, 'fuerzasResultF12');
+            console.log("Fuerzas", fuerzas);
+            console.log("F12", F12);
+        }
+            alert("Caso 12");
+
+            break;
 
 case 13:
-if (fuerzas.length > 1) {
-   F13.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F13", F13);
-}
-alert("Caso 13");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+
+            F13.unshift(positionCero);
+            mostrarArrayEnDOM(F13, 'fuerzasResultF13');
+            console.log("Fuerzas", fuerzas);
+            console.log("F13", F13);
+        }
+            alert("Caso 13");
+
+            break;
 
 case 14:
-if (fuerzas.length > 1) {
-   F14.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F14", F14);
-}
-alert("Caso 14");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+
+            F14.unshift(positionCero);
+            mostrarArrayEnDOM(F14, 'fuerzasResultF14');
+            console.log("Fuerzas", fuerzas);
+            console.log("F14", F14);
+        }
+            alert("Caso 14");
+
+            break;
 
 case 15:
-if (fuerzas.length > 1) {
-   F15.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F15", F15);
-}
-alert("Caso 15");
-break;
+            mostrarFuerzasArray();
+        if (fuerzas.length > 1) {
+
+            F15.unshift(positionCero);
+            mostrarArrayEnDOM(F15, 'fuerzasResultF15');
+            console.log("Fuerzas", fuerzas);
+            console.log("F15", F15);
+        }
+            alert("Caso 15");
+
+            break;
 
 case 16:
-if (fuerzas.length > 1) {
-   F16.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F16", F16);
-}
-alert("Caso 16");
-break;
+             mostrarFuerzasArray();
+         if (fuerzas.length > 1) {
 
-case 17:
-if (fuerzas.length > 1) {
-   F17.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F17", F17);
-}
-alert("Caso 17");
-break;
+             F16.unshift(positionCero);
+             mostrarArrayEnDOM(F16, 'fuerzasResultF16');
+             console.log("Fuerzas", fuerzas);
+             console.log("F16", F16);
+         }
+             alert("Caso 16");
 
-case 18:
-if (fuerzas.length > 1) {
-   F18.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F18", F18);
-}
-alert("Caso 18");
-break;
+             break;
 
-case 19:
-if (fuerzas.length > 1) {
-   F19.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F19", F19);
-}
-alert("Caso 19");
-break;
+case 17: 
+             mostrarFuerzasArray();
+         if (fuerzas.length > 1) {
+
+             F17.unshift(positionCero);
+             mostrarArrayEnDOM(F17, 'fuerzasResultF17');
+              console.log("Fuerzas", fuerzas);
+              console.log("F17", F17);
+         }
+         alert("Caso 16");
+
+         break;
+
+ case 18:
+            mostrarFuerzasArray();
+            if (fuerzas.length > 1) {
+                F18.unshift(positionCero);
+                mostrarArrayEnDOM(F18, 'fuerzasResultF18');
+                console.log("Fuerzas", fuerzas);
+                console.log("F18", F18);
+            }
+            alert("Caso 18");
+            break;
+
+
+            
+
+ case 19:
+            mostrarFuerzasArray();
+            if (fuerzas.length > 1) {
+                F19.unshift(positionCero);
+                mostrarArrayEnDOM(F19, 'fuerzasResultF19');
+                console.log("Fuerzas", fuerzas);
+                console.log("F19", F19);
+            }
+            alert("Caso 19");
+            break;
 
 case 20:
-if (fuerzas.length > 1) {
-   F20.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F20", F20);
-}
-alert("Caso 20");
-break;
+              mostrarFuerzasArray();
+          if (fuerzas.length > 1) {
+              F20.unshift(positionCero);
+              mostrarArrayEnDOM(F20, 'fuerzasResultF20');
+              console.log("Fuerzas", fuerzas);
+              console.log("F20", F20);
+          }
+              alert("Caso 20");
+
+              break;
+  
 
 case 21:
-if (fuerzas.length > 1) {
-   F21.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F21", F21);
-}
-alert("Caso 21");
-break;
+              mostrarFuerzasArray();
+          if (fuerzas.length > 1) {
+
+              F21.unshift(positionCero);
+              mostrarArrayEnDOM(F21, 'fuerzasResultF21');
+              console.log("Fuerzas", fuerzas);
+              console.log("F21", F21);
+           }
+              alert("Caso 21");
+
+              break;
 
 case 22:
-if (fuerzas.length > 1) {
-   F22.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F22", F22);
-}
-alert("Caso 22");
-break;
+               mostrarFuerzasArray();
+          if (fuerzas.length > 1) {
+
+              F22.unshift(positionCero);
+              mostrarArrayEnDOM(F22, 'fuerzasResultF22');
+              console.log("Fuerzas", fuerzas);
+              console.log("F22", F22);
+          }
+              alert("Caso 22");
+
+              break;
 
 case 23:
-if (fuerzas.length > 1) {
-   F23.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F23", F23);
-}
-alert("Caso 23");
-break;
+              mostrarFuerzasArray();
+          if (fuerzas.length > 1) {
+
+              F23.unshift(positionCero);
+              mostrarArrayEnDOM(F23, 'fuerzasResultF23');
+              console.log("Fuerzas", fuerzas);
+              console.log("F23", F23);
+          }
+              alert("Caso 23");
+
+              break;
 
 case 24:
-if (fuerzas.length > 1) {
-   F24.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F24", F24);
-}
-alert("Caso 24");
-break;
+              mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+
+               F24.unshift(positionCero);
+               mostrarArrayEnDOM(F24, 'fuerzasResultF24');
+               console.log("Fuerzas", fuerzas);
+               console.log("F24", F24);
+            }
+               alert("Caso 24");
+
+               break;
 
 case 25:
-if (fuerzas.length > 1) {
-   F25.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F25", F25);
-}
-alert("Caso 25");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F25.unshift(positionCero);
+               mostrarArrayEnDOM(F25, 'fuerzasResultF25');
+               console.log("Fuerzas", fuerzas);
+               console.log("F25", F25);
+            }
+               alert("Caso 25");
+
+               break;
 
 case 26:
-if (fuerzas.length > 1) {
-   F26.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F26", F26);
-}
-alert("Caso 26");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F26.unshift(positionCero);
+               mostrarArrayEnDOM(F26, 'fuerzasResultF26');
+               console.log("Fuerzas", fuerzas);
+               console.log("F26", F26);
+            }
+
+               alert("Caso 26");
+
+               break;
 
 case 27:
-if (fuerzas.length > 1) {
-   F27.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F27", F27);
-}
-alert("Caso 27");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F27.unshift(positionCero);
+               mostrarArrayEnDOM(F27, 'fuerzasResultF27');
+               console.log("Fuerzas", fuerzas);
+               console.log("F27", F27);
+            }
+               alert("Caso 27");
+
+               break;
 
 case 28:
-if (fuerzas.length > 1) {
-   F28.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F28", F28);
-}
-alert("Caso 28");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F28.unshift(positionCero);
+               mostrarArrayEnDOM(F28, 'fuerzasResultF28');
+               console.log("Fuerzas", fuerzas);
+               console.log("F28", F28);
+           }
+               alert("Caso 28");
+
+               break;
 
 case 29:
-if (fuerzas.length > 1) {
-   F29.unshift(positionCero);
-   //mostrarFuerzas();
-   mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F29", F29);
-}
-alert("Caso 29");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+
+               F29.unshift(positionCero);
+               mostrarArrayEnDOM(F29, 'fuerzasResultF29');
+               console.log("Fuerzas", fuerzas);
+               console.log("F29", F29);
+            }
+               alert("Caso 29");
+
+               break;
 
 case 30:
-if (fuerzas.length > 1) {
-   F30.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F30", F30);
-}
-alert("Caso 30");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F30.unshift(positionCero);
+               mostrarArrayEnDOM(F30, 'fuerzasResultF30');
+               console.log("Fuerzas", fuerzas);
+               console.log("F30", F30);
+           }
+               alert("Caso 30");
+
+               break;
 
 case 31:
-if (fuerzas.length > 1) {
-   F31.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F31", F31);
-}
-alert("Caso 31");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F31.unshift(positionCero);
+               mostrarArrayEnDOM(F30, 'fuerzasResultF30');
+               console.log("Fuerzas", fuerzas);
+               console.log("F31", F31);
+            }
+               alert("Caso 31");
+
+               break;
 
 case 32:
-if (fuerzas.length > 1) {
-   F32.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F32", F32);
-}
-alert("Caso 32");
-break;
+               mostrarFuerzasArray();
+           if (fuerzas.length > 1) {
+               F32.unshift(positionCero);
+               mostrarArrayEnDOM(F32, 'fuerzasResultF32');
+               console.log("Fuerzas", fuerzas);
+               console.log("F32", F32);
+            }
+               alert("Caso 32");
+
+               break;
 
 case 33:
-if (fuerzas.length > 1) {
-   F33.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F33", F33);
-}
-alert("Caso 33");
-break;
+                mostrarFuerzasArray();
+            if (fuerzas.length > 1) {
+                F33.unshift(positionCero);
+                mostrarArrayEnDOM(F33, 'fuerzasResultF33');
+                console.log("Fuerzas", fuerzas);
+                console.log("F33", F33);
+            }
+                alert("Caso 33");
+
+                break;
 
 case 34:
-// Agrega el elemento en la posición 0 de fuerzas a F34 
-fuerzas.unshift(f34.indexOf(inNum));
-if (fuerzas.length > 1) {
-   F34.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F34", F34);
-}
-alert("Caso 34");
-break;
+                mostrarFuerzasArray();
+            if (fuerzas.length > 1) {
+                F34.unshift(positionCero);
+                mostrarArrayEnDOM(F34, 'fuerzasResultF34');
+                console.log("Fuerzas", fuerzas);
+                console.log("F34", F34);
+             }
+                alert("Caso 34");
+
+                break;
 
 case 35:
-if (fuerzas.length > 1) {
-   F35.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F35", F35);
-}
-alert("Caso 35");
-break;
+                 mostrarFuerzasArray();
+             if (fuerzas.length > 1) {
+                 F35.unshift(positionCero);
+                 mostrarArrayEnDOM(F35, 'fuerzasResultF35');
+                 console.log("Fuerzas", fuerzas);
+                 console.log("F35", F35);
+              }
+                 alert("Caso 35");
+
+                 break;
 
 case 36:
-if (fuerzas.length > 1) {
-   F36.unshift(positionCero);
-  // mostrarFuerzas();
-  mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F36", F36);
-}
-alert("Caso 36");
-break;
+                 mostrarFuerzasArray();
+             if (fuerzas.length > 1) {
+                 F36.unshift(positionCero);
+                 mostrarArrayEnDOM(F36, 'fuerzasResultF36');
+                 console.log("Fuerzas", fuerzas);
+                 console.log("F36", F36);
+              }
+                 alert("Caso 36");
+
+                 break;
 
 case 37:
-if (fuerzas.length > 1) {
-   F37.unshift(positionCero);
- //  mostrarFuerzas();
- mostrarFuerzasArray();
-   console.log("Fuerzas", fuerzas);
-   console.log("F37", F37);
-}
-alert("Caso 37");
-break;
-   default:
-       alert("Número guía no reconocido");
+                 mostrarFuerzasArray();
+             if (fuerzas.length > 1) {
+                 F37.unshift(positionCero);
+                 mostrarArrayEnDOM(F37, 'fuerzasResultF37');
+                 console.log("Fuerzas", fuerzas);
+                 console.log("F37", F37);
+             }
+                 alert("Caso 37");
+
+                 break;
+
+               default:
+
+               alert("Número guía no reconocido");
        
 }
 }
 
 
-
-// Función para mostrar el array fuerzas en el DOM
-function mostrarFuerzasArray() {
-    // Verificar si el tamaño de fuerzas es mayor a 0
-    if (fuerzas.length > 0) {
-        // Obtener el div por su id
-        var fuerzasDiv = document.getElementById('fuerzas');
-
-        // Crear un elemento de texto para mostrar el contenido de fuerzas
-        var textoFuerzas = document.createTextNode('Fuerzas = [' + fuerzas.join(', ') + ']');
-
-        // Agregar el texto al div
-        fuerzasDiv.appendChild(textoFuerzas);
-    }
-}
-
-// Función para mostrar el array fuerzas en el DOM
-function mostrarFuerzasArray() {
-    // Obtener el div por su id
-    var fuerzasDiv = document.getElementById('fuerzas');
-
-    // Crear un elemento de texto para mostrar el contenido de fuerzas
-    var textoFuerzas = document.createTextNode('Fuerzas = ' + JSON.stringify(fuerzas));
-
-    // Limpiar el contenido actual del div antes de agregar el nuevo texto
-    fuerzasDiv.innerHTML = '';
-
-    // Agregar el texto al div
-    fuerzasDiv.appendChild(textoFuerzas);
-}
-// Función para mostrar el array fuerzas en el DOM
-function mostrarFuerzasArray() {
-    // Obtener el div por su id
-    var fuerzasDiv = document.getElementById('fuerzas');
-
-    // Limpiar el contenido actual del div antes de agregar el nuevo texto
-  //  fuerzasDiv.innerHTML = 'Fuerzas = ' + JSON.stringify(fuerzas);
-    fuerzasDiv.innerHTML = 'Fuerzas = [' + fuerzas.join('-') + ']';
-
-}
-
-// Función para mostrar el array F0 en el DOM
-function mostrarF0() {
-    // Obtener el div por su id
-    var fuerzasResultF0Div = document.getElementById('fuerzasResultF0');
-
-    // Limpiar el contenido actual del div antes de agregar el nuevo texto
-   // fuerzasResultF0Div.innerHTML = 'F0 = ' + JSON.stringify(F0);
-    fuerzasResultF0Div.innerHTML = 'F0 = [' + F0.join('-') + ']';
-}
