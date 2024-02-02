@@ -10,31 +10,39 @@ function mostrarArrayEnDOM(array, elementId) {
 }
 
 
-
 // Función para mostrar un array con un índice dado
 function mostrarArrayConIndice(PrediccionNum, F) {
     // Construir el nombre del array
     let arrayName = "f" + PrediccionNum;
 
+    // Variable para almacenar los valores extraídos
+    let predicciones = [];
+
     // Verificar si el array existe en el objeto 'arrays'
     if (arrays[arrayName] !== undefined) {
-        // Array para almacenar los valores resultantes
-        let Probabilidad = [];
-
         // Iterar sobre las posiciones en F
         for (let i = 0; i < F.length; i++) {
-            // Obtener el valor en la posición correspondiente de f
-            let valor = arrays[arrayName][F[i]];
+            // Obtener el valor en la posición correspondiente de 'arrays[arrayName]'
+            let posicion = F[i];
+            let valor = arrays[arrayName][posicion];
 
-            // Agregar el valor a Probabilidad
-            Probabilidad.push(valor);
+            // Agregar el valor a la variable 'predicciones'
+            predicciones.push(valor);
         }
-       
-        console.log("Predicción " + PrediccionNum + ":", Probabilidad);
+
+        // Mostrar el array original en consola
+        console.log("Array " + arrayName + ":", arrays[arrayName]);
+
+        // Mostrar los valores extraídos en consola
+        console.log("Predicciones " + PrediccionNum + ":", predicciones);
     } else {
         console.error("El array no existe.");
     }
+    mostrarArrayEnDOM(predicciones, "PROBABILIDAD");
+    // Retornar la variable 'predicciones' si es necesario utilizarla fuera de la función
+    return predicciones;
 }
+
 
 
 

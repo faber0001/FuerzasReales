@@ -841,7 +841,7 @@ case 33:
                 break;
 
 case 34:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+                mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F34.unshift(positionCero);
                 mostrarArrayEnDOM(F34, 'fuerzasResultF34');
