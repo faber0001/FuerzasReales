@@ -12,7 +12,7 @@ function mostrarArrayEnDOM(array, elementId) {
   // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
 function mostrarArrayEnDOM1(array, elementId, arrayName) {
     var arrayResultDiv = document.getElementById(elementId);
-    arrayResultDiv.innerHTML = arrayName + ' = [' + array.join('-') + ']';
+    arrayResultDiv.innerHTML = 'registro  '+arrayName + ' = [' + array.join('-') + ']';
     console.log('mostrarArrayEnDOM() llamada para ' + elementId + ', array: ' + arrayName);
     console.log(arrayResultDiv);
 }
@@ -23,6 +23,33 @@ function incrementarContadorYMostrarEnDOM() {
 
     // Obtén el elemento DOM con el id "Eventos" y actualiza su contenido
     document.getElementById("Eventos").innerHTML = " Ingresos: " + contEvent;
+}
+
+
+
+
+// Función para mostrar un array en el DOM
+function mostrarRegistrosF0aF37(nombreArray) {
+    // Obtén el elemento DOM con el id "registerF"
+    var registroDiv = document.getElementById("registerF");
+
+    // Crea el nombre del array dinámicamente
+    var nombreCompleto = 'registerF' + nombreArray;
+
+    // Asegúrate de que haya un array asociado al nombre, si no existe, crea uno vacío
+    window[nombreCompleto] = window[nombreCompleto] || [];
+
+    // Agrega el registro actual al principio del array
+    window[nombreCompleto].unshift(contEvent);
+
+    // Construye el mensaje a mostrar en el DOM
+    var mensaje = "RT " + nombreArray + ": [" + window[nombreCompleto].join(" - ") + "]";
+
+    // Muestra el mensaje en el DOM
+    registroDiv.innerHTML = mensaje;
+
+    // Imprime en consola el contenido actualizado del array
+    console.log(mensaje);
 }
 
 

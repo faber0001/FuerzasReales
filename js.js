@@ -4,9 +4,14 @@ var numGuia;
 let PrediccionNum ;
 var resultados = [];
 var fuerzas = [];
+let registerF = [];
 var numeroint;
 let contEvent=0;
-let RegisterTime=[];
+// Objeto para asociar los arrays a cada caso
+var registros = {};
+
+let registerF0=[],registerF1=[],registerF2=[],registerF3=[],registerF4=[],registerF5=[],registerF6=[],registerF7=[],registerF8=[],registerF9=[],registerF10=[],registerF11=[],registerF12=[],registerF13=[],registerF14=[],registerF15=[],registerF16=[],registerF17=[],registerF18=[],registerF19=[],registerF20=[],registerF21=[],registerF22=[],registerF23=[],registerF24=[],registerF25=[],registerF26=[],registerF27=[],registerF28=[],registerF29=[],registerF30=[],registerF31=[],registerF32=[],registerF33=[],registerF34=[],registerF35=[],registerF36=[],registerF37=[];
+
 
 let F0 = [],F1 = [],F2 = [],F3 = [],F4 = [],F5 = [],F6 = [],F7 = [],F8 = [],F9 = [],F10 = [],F11 = [],F12 = [],F13 = [],F14 = [],F15 = [],F16 = [],F17 = [],F18 = [],F19 = [],F20 = [],F21 = [],F22 = [],F23 = [],F24 = [],F25 = [],F26 = [],F27 = [],F28 = [],F29 = [],F30 = [],F31 = [],F32 = [],F33 = [],F34 = [],F35 = [],F36 = [],F37 = [];
 // Ejemplo de arrays para cada caso
@@ -123,7 +128,7 @@ function ingresarNumGuia() {
 
 
 function consultarNumero() {
-    
+
     // Llamada a la función para simular un nuevo evento
     incrementarContadorYMostrarEnDOM();
     numPrediccion = [];  // Limpiar el array cada vez que se consulta un nuevo número
@@ -154,22 +159,32 @@ function consultarNumero() {
 
 case 0:
          // Agrega el elemento en la posición 0 de fuerzas a F0 
-         //  fuerzas.unshift(f0.indexOf(inNum));
-     fuerzas.unshift(arrays.f0.indexOf(inNum));
+     //  fuerzas.unshift(f0.indexOf(inNum));
+    fuerzas.unshift(arrays.f0.indexOf(inNum));
+    
+
      break;
 case 1:
      // Agrega el elemento en la posición 0 de fuerzas a F1 
     fuerzas.unshift(arrays.f1.indexOf(inNum));
+     // Llenamos registerF0 con el contador para marcar el tiempo 
+     registerF1.unshift(contEvent);
+     mostrarArrayEnDOM1(registerF1, "registerF", registerF1);
+
     break;
         
 case 2:
     // Agrega el elemento en la posición 0 de fuerzas a F2 
      fuerzas.unshift(arrays.f2.indexOf(inNum));
+     // Ejemplo de llamada a la función para mostrar el array del caso 0
+     mostrarRegistroEnDOM(2);
      break;
 
 case 3:
      // Agrega el elemento en la posición 0 de fuerzas a F3 
      fuerzas.unshift(arrays.f3.indexOf(inNum));
+     // Ejemplo de llamada a la función para mostrar el array del caso 0
+     mostrarRegistroEnDOM(3);
      break;
             
 case 4:  
@@ -387,6 +402,10 @@ switch(positionUno){
 
        
     case 0:
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF0.unshift(contEvent);
+          
+             console.log("registroFuerza0",registerF0);
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F0.unshift(positionCero);
