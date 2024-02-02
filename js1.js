@@ -26,24 +26,13 @@ function incrementarContadorYMostrarEnDOM() {
 }
 
 
-
-
 // Función para mostrar un array en el DOM
-function mostrarRegistrosF0aF37(nombreArray) {
+function mostrarArraysF(array, nombreArray) {
     // Obtén el elemento DOM con el id "registerF"
     var registroDiv = document.getElementById("registerF");
 
-    // Crea el nombre del array dinámicamente
-    var nombreCompleto = 'registerF' + nombreArray;
-
-    // Asegúrate de que haya un array asociado al nombre, si no existe, crea uno vacío
-    window[nombreCompleto] = window[nombreCompleto] || [];
-
-    // Agrega el registro actual al principio del array
-    window[nombreCompleto].unshift(contEvent);
-
     // Construye el mensaje a mostrar en el DOM
-    var mensaje = "RT " + nombreArray + ": [" + window[nombreCompleto].join(" - ") + "]";
+    var mensaje = "RT " + nombreArray + ": [" + array.join(" - ") + "]";
 
     // Muestra el mensaje en el DOM
     registroDiv.innerHTML = mensaje;
@@ -51,6 +40,8 @@ function mostrarRegistrosF0aF37(nombreArray) {
     // Imprime en consola el contenido actualizado del array
     console.log(mensaje);
 }
+//
+
 
 
 

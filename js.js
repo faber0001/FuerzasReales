@@ -168,23 +168,19 @@ case 1:
      // Agrega el elemento en la posición 0 de fuerzas a F1 
     fuerzas.unshift(arrays.f1.indexOf(inNum));
      // Llenamos registerF0 con el contador para marcar el tiempo 
-     registerF1.unshift(contEvent);
-     mostrarArrayEnDOM1(registerF1, "registerF", registerF1);
-
+     
     break;
         
 case 2:
     // Agrega el elemento en la posición 0 de fuerzas a F2 
      fuerzas.unshift(arrays.f2.indexOf(inNum));
-     // Ejemplo de llamada a la función para mostrar el array del caso 0
-     mostrarRegistroEnDOM(2);
+    
      break;
 
 case 3:
      // Agrega el elemento en la posición 0 de fuerzas a F3 
      fuerzas.unshift(arrays.f3.indexOf(inNum));
-     // Ejemplo de llamada a la función para mostrar el array del caso 0
-     mostrarRegistroEnDOM(3);
+   
      break;
             
 case 4:  
@@ -403,9 +399,9 @@ switch(positionUno){
        
     case 0:
             // Llenamos registerF0 con el contador para marcar el tiempo 
-             registerF0.unshift(contEvent);
-          
-             console.log("registroFuerza0",registerF0);
+            registerF0.unshift(contEvent);
+            mostrarArraysF( registerF0, 'F0');
+           console.log("registroFuerza0",registerF0);
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F0.unshift(positionCero);
@@ -420,6 +416,10 @@ switch(positionUno){
         break;
 
     case 1:
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF1.unshift(contEvent);
+             mostrarArraysF( registerF1, 'F1');
+             //MUESTRA EL CONTENIDO  DEL ARRAY FUERZAS
             mostrarArrayEnDOM(fuerzas, 'fuerzas'); 
         if (fuerzas.length > 1) {
             F1.unshift(positionCero);
@@ -432,7 +432,10 @@ switch(positionUno){
         break;
 
 
- case 2:
+ case 2:      
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF2.unshift(contEvent);
+               mostrarArraysF( registerF2, 'F2');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
@@ -446,7 +449,10 @@ switch(positionUno){
 
               break;
 
- case 3:    
+ case 3:   
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF3.unshift(contEvent);
+              mostrarArraysF( registerF3, 'F3'); 
               //  mostrarFuerzas();
               mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
@@ -462,6 +468,9 @@ switch(positionUno){
              break;
 
 case 4: 
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF4.unshift(contEvent);
+               mostrarArraysF( registerF4, 'F4');
             //  mostrarFuerzas();
              mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
@@ -475,7 +484,11 @@ case 4:
 
                break;
 
-case 5:
+case 5: 
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF5.unshift(contEvent);
+            mostrarArraysF( registerF5, 'F5');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F5.unshift(positionCero);
@@ -488,6 +501,11 @@ case 5:
 
             break;
 case 6:
+    
+           // Llenamos registerF0 con el contador para marcar el tiempo 
+           registerF6.unshift(contEvent);
+           mostrarArraysF( registerF6, 'F6');
+            //  mostrarFuerzas();
            mostrarArrayEnDOM(fuerzas, 'fuerzas');
        if (fuerzas.length > 1) {
            F6.unshift(positionCero);
@@ -501,6 +519,11 @@ case 6:
            break;
 
  case 7:
+    
+          // Llenamos registerF0 con el contador para marcar el tiempo 
+          registerF7.unshift(contEvent);
+          mostrarArraysF( registerF7, 'F7');
+          //  mostrarFuerzas();
            mostrarArrayEnDOM(fuerzas, 'fuerzas');
        if (fuerzas.length > 1) {
            F7.unshift(positionCero);
@@ -514,6 +537,14 @@ case 6:
            break;
 
 case 8:
+    
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF8.unshift(contEvent);
+            mostrarArraysF( registerF8, 'F8');
+            //  mostrarFuerzas();
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            mostrarArraysF( registerF1, 'F1');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
            F8.unshift(positionCero);
@@ -527,6 +558,11 @@ case 8:
            break;
 
 case 9:
+    
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF9.unshift(contEvent);
+            mostrarArraysF( registerF9, 'F9');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F9.unshift(positionCero);
@@ -540,6 +576,11 @@ case 9:
             break;
 
 case 10:
+    
+           // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF10.unshift(contEvent);
+            mostrarArraysF( registerF10, 'F10');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F10.unshift(positionCero);
@@ -553,6 +594,11 @@ case 10:
             break;
 
 case 11:
+    
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF11.unshift(contEvent);
+            mostrarArraysF( registerF11, 'F11');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) { 
             F11.unshift(positionCero);
@@ -566,6 +612,11 @@ case 11:
             break;
 
 case 12:
+    
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF12.unshift(contEvent);
+            mostrarArraysF( registerF12, 'F12');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F12.unshift(positionCero);
@@ -579,6 +630,11 @@ case 12:
             break;
 
 case 13:
+    
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF13.unshift(contEvent);
+            mostrarArraysF( registerF13, 'F13');
+            //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
@@ -593,7 +649,12 @@ case 13:
             break;
 
 case 14:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+        
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF14.unshift(contEvent);
+            mostrarArraysF( registerF14, 'F14');
+            //  mostrarFuerzas();
+            mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
             F14.unshift(positionCero);
@@ -607,7 +668,12 @@ case 14:
             break;
 
 case 15:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+    
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF15.unshift(contEvent);
+             mostrarArraysF( registerF15, 'F15');
+            //  mostrarFuerzas();
+            mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
 
             F15.unshift(positionCero);
@@ -621,7 +687,12 @@ case 15:
             break;
 
 case 16:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+         
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF16.unshift(contEvent);
+             mostrarArraysF( registerF16, 'F16');
+            //  mostrarFuerzas(); 
+             mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
 
              F16.unshift(positionCero);
@@ -635,7 +706,12 @@ case 16:
              break;
 
 case 17: 
-mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF17.unshift(contEvent);
+              mostrarArraysF( registerF17, 'F17');
+            //  mostrarFuerzas();
+             mostrarArrayEnDOM(fuerzas, 'fuerzas');
          if (fuerzas.length > 1) {
 
              F17.unshift(positionCero);
@@ -649,7 +725,12 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
          break;
 
  case 18:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+              
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+                registerF18.unshift(contEvent);
+                mostrarArraysF( registerF18, 'F18');
+            //  mostrarFuerzas();
+                mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F18.unshift(positionCero);
                 mostrarArrayEnDOM(F18, 'fuerzasResultF18');
@@ -664,7 +745,12 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
             
 
  case 19:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+    
+                // Llenamos registerF0 con el contador para marcar el tiempo 
+                registerF19.unshift(contEvent);
+                mostrarArraysF( registerF19, 'F19');
+                //  mostrarFuerzas();
+                mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F19.unshift(positionCero);
                 mostrarArrayEnDOM(F19, 'fuerzasResultF19');
@@ -676,7 +762,12 @@ mostrarArrayEnDOM(fuerzas, 'fuerzas');
             break;
 
 case 20:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+    
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF20.unshift(contEvent);
+              mostrarArraysF( registerF20, 'F20');
+              //  mostrarFuerzas();
+              mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
               F20.unshift(positionCero);
               mostrarArrayEnDOM(F20, 'fuerzasResultF20');
@@ -690,7 +781,12 @@ case 20:
   
 
 case 21:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF21.unshift(contEvent);
+             mostrarArraysF( registerF21, 'F21');
+             //  mostrarFuerzas();
+             mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F21.unshift(positionCero);
@@ -704,7 +800,12 @@ case 21:
               break;
 
 case 22:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF22.unshift(contEvent);
+              mostrarArraysF( registerF22, 'F22');
+              //  mostrarFuerzas();
+              mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F22.unshift(positionCero);
@@ -718,7 +819,12 @@ case 22:
               break;
 
 case 23:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+              registerF23.unshift(contEvent);
+              mostrarArraysF( registerF23, 'F23');
+             //  mostrarFuerzas();
+              mostrarArrayEnDOM(fuerzas, 'fuerzas');
           if (fuerzas.length > 1) {
 
               F23.unshift(positionCero);
@@ -732,7 +838,12 @@ case 23:
               break;
 
 case 24:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF24.unshift(contEvent);
+               mostrarArraysF( registerF24, 'F24');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
 
                F24.unshift(positionCero);
@@ -746,7 +857,12 @@ case 24:
                break;
 
 case 25:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF25.unshift(contEvent);
+               mostrarArraysF( registerF25, 'F25');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F25.unshift(positionCero);
                mostrarArrayEnDOM(F25, 'fuerzasResultF25');
@@ -759,6 +875,11 @@ case 25:
                break;
 
 case 26:
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF26.unshift(contEvent);
+               mostrarArraysF( registerF26, 'F26');
+               //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F26.unshift(positionCero);
@@ -773,7 +894,12 @@ case 26:
                break;
 
 case 27:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF27.unshift(contEvent);
+               mostrarArraysF( registerF27, 'F27');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F27.unshift(positionCero);
                mostrarArrayEnDOM(F27, 'fuerzasResultF27');
@@ -786,7 +912,12 @@ case 27:
                break;
 
 case 28:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF28.unshift(contEvent);
+               mostrarArraysF( registerF28, 'F28');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F28.unshift(positionCero);
                mostrarArrayEnDOM(F28, 'fuerzasResultF28');
@@ -799,7 +930,12 @@ case 28:
                break;
 
 case 29:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF29.unshift(contEvent);
+               mostrarArraysF( registerF29, 'F29');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
 
                F29.unshift(positionCero);
@@ -813,7 +949,12 @@ case 29:
                break;
 
 case 30:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+               // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF30.unshift(contEvent);
+               mostrarArraysF( registerF30, 'F30');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F30.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
@@ -826,7 +967,12 @@ case 30:
                break;
 
 case 31:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+                // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF31.unshift(contEvent);
+               mostrarArraysF( registerF31, 'F31');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F31.unshift(positionCero);
                mostrarArrayEnDOM(F31, 'fuerzasResultF31');
@@ -839,7 +985,12 @@ case 31:
                break;
 
 case 32:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+              // Llenamos registerF0 con el contador para marcar el tiempo 
+               registerF32.unshift(contEvent);
+               mostrarArraysF( registerF32, 'F32');
+               //  mostrarFuerzas();
+               mostrarArrayEnDOM(fuerzas, 'fuerzas');
            if (fuerzas.length > 1) {
                F32.unshift(positionCero);
                mostrarArrayEnDOM(F32, 'fuerzasResultF32');
@@ -852,7 +1003,12 @@ case 32:
                break;
 
 case 33:
-    mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
+                // Llenamos registerF0 con el contador para marcar el tiempo 
+                registerF33.unshift(contEvent);
+                mostrarArraysF( registerF33, 'F33');
+                //  mostrarFuerzas();
+                mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F33.unshift(positionCero);
                 mostrarArrayEnDOM(F33, 'fuerzasResultF33');
@@ -865,6 +1021,11 @@ case 33:
                 break;
 
 case 34:
+
+                // Llenamos registerF0 con el contador para marcar el tiempo 
+                registerF34.unshift(contEvent);
+                mostrarArraysF( registerF34, 'F34');
+                //  mostrarFuerzas();
                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
             if (fuerzas.length > 1) {
                 F34.unshift(positionCero);
@@ -878,6 +1039,11 @@ case 34:
                 break;
 
 case 35:
+
+                 // Llenamos registerF0 con el contador para marcar el tiempo 
+                 registerF35.unshift(contEvent);
+                 mostrarArraysF( registerF35, 'F35');
+                 //  mostrarFuerzas();
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F35.unshift(positionCero);
@@ -891,7 +1057,11 @@ case 35:
                  break;
 
 case 36:
-                 
+
+                // Llenamos registerF0 con el contador para marcar el tiempo 
+                 registerF36.unshift(contEvent);
+                 mostrarArraysF( registerF36, 'F36');
+                 //  mostrarFuerzas(); 
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F36.unshift(positionCero);
@@ -906,6 +1076,11 @@ case 36:
                  break;
 
 case 37:
+
+                 // Llenamos registerF0 con el contador para marcar el tiempo 
+                registerF37.unshift(contEvent);
+                mostrarArraysF( registerF37, 'F37');
+                 //  mostrarFuerzas();
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
              if (fuerzas.length > 1) {
                  F37.unshift(positionCero);
