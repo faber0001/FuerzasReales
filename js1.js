@@ -17,6 +17,17 @@ function mostrarArrayEnDOM1(array, elementId, arrayName) {
     console.log(arrayResultDiv);
 }
 
+function incrementarContadorYMostrarEnDOM() {
+    // Incrementa el contador
+    contEvent++;
+
+    // Obtén el elemento DOM con el id "Eventos" y actualiza su contenido
+    document.getElementById("Eventos").innerHTML = " Ingresos: " + contEvent;
+}
+
+
+
+
 
 // Función para mostrar un array con un índice dado
 function mostrarArrayConIndice(PrediccionNum, F) {
