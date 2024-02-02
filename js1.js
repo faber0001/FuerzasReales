@@ -9,6 +9,14 @@ function mostrarArrayEnDOM(array, elementId) {
 
 }
 
+  // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
+function mostrarArrayEnDOM1(array, elementId, arrayName) {
+    var arrayResultDiv = document.getElementById(elementId);
+    arrayResultDiv.innerHTML = arrayName + ' = [' + array.join('-') + ']';
+    console.log('mostrarArrayEnDOM() llamada para ' + elementId + ', array: ' + arrayName);
+    console.log(arrayResultDiv);
+}
+
 
 // Función para mostrar un array con un índice dado
 function mostrarArrayConIndice(PrediccionNum, F) {
@@ -38,7 +46,7 @@ function mostrarArrayConIndice(PrediccionNum, F) {
     } else {
         console.error("El array no existe.");
     }
-    mostrarArrayEnDOM(predicciones, "PROBABILIDAD");
+    mostrarArrayEnDOM1(predicciones, "PROBABILIDAD",arrayName);
     // Retornar la variable 'predicciones' si es necesario utilizarla fuera de la función
     return predicciones;
 }
