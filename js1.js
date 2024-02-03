@@ -12,7 +12,7 @@ function mostrarArrayEnDOM(array, elementId) {
   // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
 function mostrarArrayEnDOM1(array, elementId, arrayName) {
     var arrayResultDiv = document.getElementById(elementId);
-    arrayResultDiv.innerHTML = 'registro  '+arrayName + ' = [' + array.join('-') + ']';
+    arrayResultDiv.innerHTML = 'Probabilidad  '+arrayName + ' = [' + array.join('-') + ']';
     console.log('mostrarArrayEnDOM() llamada para ' + elementId + ', array: ' + arrayName);
     console.log(arrayResultDiv);
 }
