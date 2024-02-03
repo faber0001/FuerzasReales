@@ -5,6 +5,8 @@ let PrediccionNum ;
 var resultados = [];
 var fuerzas = [];
 let registerF = [];
+let history = [];
+let histpre = [];
 var numeroint;
 let contEvent=0;
 // Objeto para asociar los arrays a cada caso
@@ -118,7 +120,7 @@ function ingresarNumGuia() {
         numGuia = numGuiaValue;
         numGuiaInput.parentElement.style.display = "none";
         document.getElementById("inNum").style.display = "block";
-        document.getElementById("resultados").style.display = "block";
+     //   document.getElementById("resultados").style.display = "block";
     } else {
         alert("Por favor, ingrese un valor válido entre 0 y 37.");
         // Puedes agregar más lógica aquí según tus necesidades
@@ -148,10 +150,14 @@ function consultarNumero() {
     }
     //agregue inNum a la  variable global PrediccionNum;
     PrediccionNum=inNum;
+    //ilnlgreso dztos a  array history[];
+    history.unshift(inNum);
+    //imporimi array hisstory en DON
+    mostrarArrayEnDOM(history, "history");
     
 
       
-    resultados.push(`Número Guía: ${numGuia}, Número Consultado: ${inNum}`);
+   // resultados.push(`Número Guía: ${numGuia}, Número Consultado: ${inNum}`);
 
     // Utiliza el valor de numGuia para realizar acciones según el caso
     switch (numGuia) {
@@ -358,7 +364,7 @@ case 37:
     numGuia = inNum;
 
     // Muestra los resultados en el textarea
-    document.getElementById("resultTextArea").value = resultados.join("\n");
+   // document.getElementById("resultTextArea").value = resultados.join("\n");
    
 
     if (resultados.length < cantidadDatos) {
