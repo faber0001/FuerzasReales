@@ -2,7 +2,7 @@
 // Primero, define la función mostrarArrayEnDOM
 function mostrarArrayEnDOM(array, elementId) {
     var arrayResultDiv = document.getElementById(elementId);
-    arrayResultDiv.innerHTML = elementId + ' = [' + array.join(' || ') + ']';
+    arrayResultDiv.innerHTML = elementId + ' = [' + array.join('|') + ']';
     console.log('mostrarArrayEnDOM() llamada para ' + elementId);
     console.log(arrayResultDiv);
 
@@ -12,7 +12,7 @@ function mostrarArrayEnDOM(array, elementId) {
   // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
 function mostrarArrayEnDOM1(array, elementId, arrayName) {
     var arrayResultDiv = document.getElementById(elementId);
-    arrayResultDiv.innerHTML = 'Probabilidad  '+arrayName + ' = [' + array.join('-') + ']';
+    arrayResultDiv.innerHTML = 'registro  '+arrayName + ' = [' + array.join('-') + ']';
     console.log('mostrarArrayEnDOM() llamada para ' + elementId + ', array: ' + arrayName);
     console.log(arrayResultDiv);
 }
@@ -32,7 +32,7 @@ function mostrarArraysF(array, nombreArray) {
     var registroDiv = document.getElementById("registerF");
 
     // Construye el mensaje a mostrar en el DOM
-    var mensaje = "Time " + nombreArray + ": [" + array.join(" - ") + "]";
+    var mensaje = "RT " + nombreArray + ": [" + array.join(" - ") + "]";
 
     // Muestra el mensaje en el DOM
     registroDiv.innerHTML = mensaje;
@@ -41,34 +41,6 @@ function mostrarArraysF(array, nombreArray) {
     console.log(mensaje);
 }
 //
-// Función para mostrar un array histpre en el DOM
-function mostrarHistoryPre(PrediccionNum,array) {
-    // Construir el nombre del array
-    let arrayName = "f" + PrediccionNum;
-
-    // Variable para almacenar los valores extraídos
-    let predicciones = [];
-
-    // Verificar si el array existe en el objeto 'arrays'
-    if (arrays[arrayName] !== undefined) {
-        // Iterar sobre las posiciones en F
-        for (let i = 0; i < array.length; i++) {
-            // Obtener el valor en la posición correspondiente de 'arrays[arrayName]'
-            let posicion = array[i];
-            let valor = arrays[arrayName][posicion];
-
-            // Agregar el valor a la variable 'predicciones'
-            predicciones.unshift(valor);
-
-        } 
-      
-        } 
-          else {
-            console.error("El array no existe.");
-            
-    } mostrarArrayEnDOM(predicciones, "prehist");
-      return predicciones;
-}
 
 
 
