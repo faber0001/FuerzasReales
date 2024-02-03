@@ -407,11 +407,14 @@ switch(positionUno){
             // Llenamos registerF0 con el contador para marcar el tiempo 
             registerF0.unshift(contEvent);
             mostrarArraysF( registerF0, 'F0');
-           console.log("registroFuerza0",registerF0);
+            //recorremo registerF0 para guardar sus datos en histpre
+            
+            mostrarHistoryPre(PrediccionNum,registerF0);
+            console.log("registroFuerza0",registerF0);
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
-            F0.unshift(positionCero);
 
+            F0.unshift(positionCero);
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
             // Ejemplo de uso con PrediccionNum = 1
             console.log("NUmero de entrada Fuerzareales   "+PrediccionNum);
