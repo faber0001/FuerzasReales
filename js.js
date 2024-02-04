@@ -8,6 +8,7 @@ let registerF = [];
 let history=[];
 var numeroint;
 let contEvent=0;
+var probabilidad=[];
 // Objeto para asociar los arrays a cada caso
 var registros = {};
 
@@ -410,7 +411,6 @@ switch(positionUno){
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
         if (fuerzas.length > 1) {
             F0.unshift(positionCero);
-
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
             // Ejemplo de uso con PrediccionNum = 1
             console.log("NUmero de entrada Fuerzareales   "+PrediccionNum);
@@ -430,6 +430,7 @@ switch(positionUno){
             F1.unshift(positionCero);
             mostrarArrayEnDOM(F1, 'fuerzasResultF1');
             mostrarArrayConIndice(PrediccionNum, F1);
+            prediccion();
             console.log("Fuerzas", fuerzas);
             console.log("F1", F1);
         }

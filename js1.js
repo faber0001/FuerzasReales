@@ -66,6 +66,15 @@ function mostrarArrayConIndice(PrediccionNum, F) {
             // Agregar el valor a la variable 'predicciones'
             predicciones.push(valor);
         }
+         // Agregar el contenido de predicciones al inicio de probabilidad sin borrar el contenido actual
+          probabilidad = [...predicciones, ...probabilidad];
+          console.log("probabilidad???",probabilidad);
+          mostrarArrayEnDOM(probabilidad, "histpre");
+
+    // Imprimir el tamaño y contenido del array probabilidad
+    console.log("Tamaño de probabilidad después de agregar predicciones", probabilidad.length);
+    console.log("Contenido de probabilidad después de agregar predicciones", probabilidad);
+        
 
         // Mostrar el array original en consola
         console.log("Array " + arrayName + ":", arrays[arrayName]);
@@ -79,27 +88,5 @@ function mostrarArrayConIndice(PrediccionNum, F) {
     // Retornar la variable 'predicciones' si es necesario utilizarla fuera de la función
     return predicciones;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
