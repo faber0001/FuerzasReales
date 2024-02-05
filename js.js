@@ -419,13 +419,10 @@ switch(positionUno){
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
             
         if (fuerzas.length > 1) {
+
+
             F0.unshift(positionCero);
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
-            //mira la concidencia enfre fuerzasposioion 0 y probalidadses posicion 0
-             //arrat de aciertos
-             perfectHit();
-            // Ejemplo de uso con PrediccionNum = 1
-            console.log("NUmero de entrada Fuerzareales   "+PrediccionNum);
             mostrarArrayConIndice(PrediccionNum, F0);
             
         } 
@@ -438,13 +435,14 @@ switch(positionUno){
             mostrarArraysF( registerF1, 'F1');
             //MUESTRA EL CONTENIDO  DEL ARRAY FUERZAS
             mostrarArrayEnDOM(fuerzas, 'fuerzas'); 
+
         if (fuerzas.length > 1) {
+
+
             F1.unshift(positionCero);
             mostrarArrayEnDOM(F1, 'fuerzasResultF1');
             mostrarArrayConIndice(PrediccionNum, F1);
       
-            console.log("Fuerzas", fuerzas);
-            console.log("F1", F1);
         }
           
         break;
@@ -461,8 +459,7 @@ switch(positionUno){
               mostrarArrayEnDOM(F2, 'fuerzasResultF2');
               mostrarArrayConIndice(PrediccionNum, F2);
             
-              console.log("Fuerzas", fuerzas);
-              console.log("F2", F2);
+             
         }
               
 
@@ -479,45 +476,43 @@ switch(positionUno){
               F3.unshift(positionCero);
               mostrarArrayEnDOM(F3, 'fuerzasResultF3');
               mostrarArrayConIndice(PrediccionNum, F3);
-            
-              console.log("Fuerzas", fuerzas);
-              console.log("F3", F3);
+         
        }
              
 
              break;
 
 case 4: 
-              // Llenamos registerF0 con el contador para marcar el tiempo 
-              registerF4.unshift(contEvent);
-               mostrarArraysF( registerF4, 'F4');
-            //  mostrarFuerzas();
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF4.unshift(contEvent);
+             mostrarArraysF( registerF4, 'F4');
+             //  mostrarFuerzas();
              mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
          if (fuerzas.length > 1) {
+
               F4.unshift(positionCero);
               mostrarArrayEnDOM(F4, 'fuerzasResultF4');
               mostrarArrayConIndice(PrediccionNum, F4);
-           
-              console.log("Fuerzas", fuerzas);
-              console.log("F4", F4);
+     
        }
                
 
                break;
 
 case 5: 
-             // Llenamos registerF0 con el contador para marcar el tiempo 
+            // Llenamos registerF0 con el contador para marcar el tiempo 
             registerF5.unshift(contEvent);
             mostrarArraysF( registerF5, 'F5');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
+
             F5.unshift(positionCero);
             mostrarArrayEnDOM(F5, 'fuerzasResultF5');
             mostrarArrayConIndice(PrediccionNum, F5);
          
-            console.log("Fuerzas", fuerzas);
-            console.log("F5", F5);
        }
             
 
@@ -529,13 +524,13 @@ case 6:
            mostrarArraysF( registerF6, 'F6');
             //  mostrarFuerzas();
            mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
        if (fuerzas.length > 1) {
+
            F6.unshift(positionCero);
            mostrarArrayEnDOM(F6, 'fuerzasResultF6');
            mostrarArrayConIndice(PrediccionNum, F6);
-        ;
-           console.log("Fuerzas", fuerzas);
-           console.log("F6", F6);
+    
        }
            
 
@@ -543,18 +538,18 @@ case 6:
 
  case 7:
     
-          // Llenamos registerF0 con el contador para marcar el tiempo 
-          registerF7.unshift(contEvent);
-          mostrarArraysF( registerF7, 'F7');
-          //  mostrarFuerzas();
+           // Llenamos registerF0 con el contador para marcar el tiempo 
+           registerF7.unshift(contEvent);
+           mostrarArraysF( registerF7, 'F7');
+           //  mostrarFuerzas();
            mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
        if (fuerzas.length > 1) {
+
            F7.unshift(positionCero);
            mostrarArrayEnDOM(F7, 'fuerzasResultF7');
            mostrarArrayConIndice(PrediccionNum, F7);
-        
-           console.log("Fuerzas", fuerzas);
-           console.log("F7", F7);
+ 
         }
            
 
@@ -570,13 +565,13 @@ case 8:
             mostrarArraysF( registerF1, 'F1');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
+
            F8.unshift(positionCero);
            mostrarArrayEnDOM(F8, 'fuerzasResultF8');
            mostrarArrayConIndice(PrediccionNum, F8);
-          
-           console.log("Fuerzas", fuerzas);
-           console.log("F8", F8);
+         
        }
            
 
@@ -584,18 +579,18 @@ case 8:
 
 case 9:
     
-              // Llenamos registerF0 con el contador para marcar el tiempo 
+            // Llenamos registerF0 con el contador para marcar el tiempo 
             registerF9.unshift(contEvent);
             mostrarArraysF( registerF9, 'F9');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
+
             F9.unshift(positionCero);
             mostrarArrayEnDOM(F9, 'fuerzasResultF9');
             mostrarArrayConIndice(PrediccionNum, F9);
         
-            console.log("Fuerzas", fuerzas);
-            console.log("F9", F9);
        }
 
             
@@ -608,13 +603,13 @@ case 10:
             mostrarArraysF( registerF10, 'F10');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
+
             F10.unshift(positionCero);
             mostrarArrayEnDOM(F10, 'fuerzasResultF10');
             mostrarArrayConIndice(PrediccionNum, F10);
            
-            console.log("Fuerzas", fuerzas);
-            console.log("F10", F10);
         }
             
 
@@ -627,13 +622,13 @@ case 11:
             mostrarArraysF( registerF11, 'F11');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) { 
+
             F11.unshift(positionCero);
             mostrarArrayEnDOM(F11, 'fuerzasResultF11');
             mostrarArrayConIndice(PrediccionNum, F11);
          
-            console.log("Fuerzas", fuerzas);
-            console.log("F11", F11);
         }
             
 
@@ -646,13 +641,13 @@ case 12:
             mostrarArraysF( registerF12, 'F12');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
+
             F12.unshift(positionCero);
             mostrarArrayEnDOM(F12, 'fuerzasResultF12');
             mostrarArrayConIndice(PrediccionNum, F12);
          
-            console.log("Fuerzas", fuerzas);
-            console.log("F12", F12);
         }
             
 
@@ -660,19 +655,18 @@ case 12:
 
 case 13:
     
-             // Llenamos registerF0 con el contador para marcar el tiempo 
+            // Llenamos registerF0 con el contador para marcar el tiempo 
             registerF13.unshift(contEvent);
             mostrarArraysF( registerF13, 'F13');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
 
             F13.unshift(positionCero);
             mostrarArrayEnDOM(F13, 'fuerzasResultF13');
             mostrarArrayConIndice(PrediccionNum, F13);
        
-            console.log("Fuerzas", fuerzas);
-            console.log("F13", F13);
         }
             
 
@@ -685,14 +679,13 @@ case 14:
             mostrarArraysF( registerF14, 'F14');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
 
             F14.unshift(positionCero);
             mostrarArrayEnDOM(F14, 'fuerzasResultF14');
             mostrarArrayConIndice(PrediccionNum, F14);
-            
-            console.log("Fuerzas", fuerzas);
-            console.log("F14", F14);
+      
         }
             
 
@@ -700,19 +693,18 @@ case 14:
 
 case 15:
     
-             // Llenamos registerF0 con el contador para marcar el tiempo 
-             registerF15.unshift(contEvent);
-             mostrarArraysF( registerF15, 'F15');
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF15.unshift(contEvent);
+            mostrarArraysF( registerF15, 'F15');
             //  mostrarFuerzas();
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
         if (fuerzas.length > 1) {
 
             F15.unshift(positionCero);
             mostrarArrayEnDOM(F15, 'fuerzasResultF15');
             mostrarArrayConIndice(PrediccionNum, F15);
         
-            console.log("Fuerzas", fuerzas);
-            console.log("F15", F15);
         }
             
 
@@ -720,19 +712,18 @@ case 15:
 
 case 16:
          
-              // Llenamos registerF0 con el contador para marcar el tiempo 
+             // Llenamos registerF0 con el contador para marcar el tiempo 
              registerF16.unshift(contEvent);
              mostrarArraysF( registerF16, 'F16');
-            //  mostrarFuerzas(); 
+             //  mostrarFuerzas(); 
              mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
          if (fuerzas.length > 1) {
 
              F16.unshift(positionCero);
              mostrarArrayEnDOM(F16, 'fuerzasResultF16');
              mostrarArrayConIndice(PrediccionNum, F16);
           
-             console.log("Fuerzas", fuerzas);
-             console.log("F16", F16);
          }
           
 
@@ -740,19 +731,18 @@ case 16:
 
 case 17: 
 
-              // Llenamos registerF0 con el contador para marcar el tiempo 
-              registerF17.unshift(contEvent);
-              mostrarArraysF( registerF17, 'F17');
-            //  mostrarFuerzas();
+             // Llenamos registerF0 con el contador para marcar el tiempo 
+             registerF17.unshift(contEvent);
+             mostrarArraysF( registerF17, 'F17');
+             //  mostrarFuerzas();
              mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
          if (fuerzas.length > 1) {
 
              F17.unshift(positionCero);
              mostrarArrayEnDOM(F17, 'fuerzasResultF17');
              mostrarArrayConIndice(PrediccionNum, F17);
           
-             console.log("Fuerzas", fuerzas);
-             console.log("F17", F17);
          }
         
 
@@ -760,18 +750,18 @@ case 17:
 
  case 18:
               
-               // Llenamos registerF0 con el contador para marcar el tiempo 
+                // Llenamos registerF0 con el contador para marcar el tiempo 
                 registerF18.unshift(contEvent);
                 mostrarArraysF( registerF18, 'F18');
-            //  mostrarFuerzas();
+                //  mostrarFuerzas();
                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
             if (fuerzas.length > 1) {
+
                 F18.unshift(positionCero);
                 mostrarArrayEnDOM(F18, 'fuerzasResultF18');
                 mostrarArrayConIndice(PrediccionNum, F18);
-                           
-                console.log("Fuerzas", fuerzas);
-                console.log("F18", F18);
+        
             }
         
             break;
@@ -786,13 +776,13 @@ case 17:
                 mostrarArraysF( registerF19, 'F19');
                 //  mostrarFuerzas();
                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
             if (fuerzas.length > 1) {
+
                 F19.unshift(positionCero);
                 mostrarArrayEnDOM(F19, 'fuerzasResultF19');
                 mostrarArrayConIndice(PrediccionNum, F19);
-            
-                console.log("Fuerzas", fuerzas);
-                console.log("F19", F19);
+      
             }
           
             break;
@@ -804,13 +794,13 @@ case 20:
               mostrarArraysF( registerF20, 'F20');
               //  mostrarFuerzas();
               mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
           if (fuerzas.length > 1) {
+
               F20.unshift(positionCero);
               mostrarArrayEnDOM(F20, 'fuerzasResultF20');
               mostrarArrayConIndice(PrediccionNum, F20);
         
-              console.log("Fuerzas", fuerzas);
-              console.log("F20", F20);
           }
        
 
@@ -818,20 +808,18 @@ case 20:
   
 
 case 21:
-
-            // Llenamos registerF0 con el contador para marcar el tiempo 
+             // Llenamos registerF0 con el contador para marcar el tiempo 
              registerF21.unshift(contEvent);
              mostrarArraysF( registerF21, 'F21');
              //  mostrarFuerzas();
              mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
           if (fuerzas.length > 1) {
 
               F21.unshift(positionCero);
               mostrarArrayEnDOM(F21, 'fuerzasResultF21');
               mostrarArrayConIndice(PrediccionNum, F21);
          
-              console.log("Fuerzas", fuerzas);
-              console.log("F21", F21);
            }
             
 
@@ -844,14 +832,13 @@ case 22:
               mostrarArraysF( registerF22, 'F22');
               //  mostrarFuerzas();
               mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
           if (fuerzas.length > 1) {
 
               F22.unshift(positionCero);
               mostrarArrayEnDOM(F22, 'fuerzasResultF22');
               mostrarArrayConIndice(PrediccionNum, F22);
-           
-              console.log("Fuerzas", fuerzas);
-              console.log("F22", F22);
+        
           }
            
 
@@ -859,19 +846,18 @@ case 22:
 
 case 23:
 
-               // Llenamos registerF0 con el contador para marcar el tiempo 
+              // Llenamos registerF0 con el contador para marcar el tiempo 
               registerF23.unshift(contEvent);
               mostrarArraysF( registerF23, 'F23');
-             //  mostrarFuerzas();
+              //  mostrarFuerzas();
               mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
           if (fuerzas.length > 1) {
 
               F23.unshift(positionCero);
               mostrarArrayEnDOM(F23, 'fuerzasResultF23');
               mostrarArrayConIndice(PrediccionNum, F23);
-            
-              console.log("Fuerzas", fuerzas);
-              console.log("F23", F23);
+          
           }
             
 
@@ -884,14 +870,13 @@ case 24:
                mostrarArraysF( registerF24, 'F24');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
 
                F24.unshift(positionCero);
                mostrarArrayEnDOM(F24, 'fuerzasResultF24');
                mostrarArrayConIndice(PrediccionNum, F24);
-              
-               console.log("Fuerzas", fuerzas);
-               console.log("F24", F24);
+             
             }
               
 
@@ -904,13 +889,13 @@ case 25:
                mostrarArraysF( registerF25, 'F25');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F25.unshift(positionCero);
                mostrarArrayEnDOM(F25, 'fuerzasResultF25');
                mostrarArrayConIndice(PrediccionNum, F25);
             
-               console.log("Fuerzas", fuerzas);
-               console.log("F25", F25);
             }
             
 
@@ -923,13 +908,13 @@ case 26:
                mostrarArraysF( registerF26, 'F26');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F26.unshift(positionCero);
                mostrarArrayEnDOM(F26, 'fuerzasResultF26');
                mostrarArrayConIndice(PrediccionNum, F26);
          
-               console.log("Fuerzas", fuerzas);
-               console.log("F26", F26);
             }
 
       
@@ -943,13 +928,13 @@ case 27:
                mostrarArraysF( registerF27, 'F27');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F27.unshift(positionCero);
                mostrarArrayEnDOM(F27, 'fuerzasResultF27');
                mostrarArrayConIndice(PrediccionNum, F27);
-             
-               console.log("Fuerzas", fuerzas);
-               console.log("F27", F27);
+        
             }
 
 
@@ -962,13 +947,12 @@ case 28:
                mostrarArraysF( registerF28, 'F28');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
                F28.unshift(positionCero);
                mostrarArrayEnDOM(F28, 'fuerzasResultF28');
                mostrarArrayConIndice(PrediccionNum, F28);
           
-               console.log("Fuerzas", fuerzas);
-               console.log("F28", F28);
            }
              
 
@@ -981,14 +965,13 @@ case 29:
                mostrarArraysF( registerF29, 'F29');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
 
                F29.unshift(positionCero);
                mostrarArrayEnDOM(F29, 'fuerzasResultF29');
                mostrarArrayConIndice(PrediccionNum, F29);
           
-               console.log("Fuerzas", fuerzas);
-               console.log("F29", F29);
             }
                
 
@@ -1001,13 +984,13 @@ case 30:
                mostrarArraysF( registerF30, 'F30');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F30.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
                mostrarArrayConIndice(PrediccionNum, F30);
-             
-               console.log("Fuerzas", fuerzas);
-               console.log("F30", F30);
+           
            }
               
 
@@ -1015,18 +998,18 @@ case 30:
 
 case 31:
 
-                // Llenamos registerF0 con el contador para marcar el tiempo 
+               // Llenamos registerF0 con el contador para marcar el tiempo 
                registerF31.unshift(contEvent);
                mostrarArraysF( registerF31, 'F31');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F31.unshift(positionCero);
                mostrarArrayEnDOM(F31, 'fuerzasResultF31');
                mostrarArrayConIndice(PrediccionNum, F31);
-          
-               console.log("Fuerzas", fuerzas);
-               console.log("F31", F31);
+ 
             }
         
 
@@ -1034,18 +1017,18 @@ case 31:
 
 case 32:
 
-              // Llenamos registerF0 con el contador para marcar el tiempo 
+               // Llenamos registerF0 con el contador para marcar el tiempo 
                registerF32.unshift(contEvent);
                mostrarArraysF( registerF32, 'F32');
                //  mostrarFuerzas();
                mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
            if (fuerzas.length > 1) {
+
                F32.unshift(positionCero);
                mostrarArrayEnDOM(F32, 'fuerzasResultF32');
                mostrarArrayConIndice(PrediccionNum, F32);
            
-               console.log("Fuerzas", fuerzas);
-               console.log("F32", F32);
             }
              
 
@@ -1058,13 +1041,13 @@ case 33:
                 mostrarArraysF( registerF33, 'F33');
                 //  mostrarFuerzas();
                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
             if (fuerzas.length > 1) {
+
                 F33.unshift(positionCero);
                 mostrarArrayEnDOM(F33, 'fuerzasResultF33');
                 mostrarArrayConIndice(PrediccionNum, F33);
               
-                console.log("Fuerzas", fuerzas);
-                console.log("F33", F33);
             }
              
 
@@ -1077,13 +1060,13 @@ case 34:
                 mostrarArraysF( registerF34, 'F34');
                 //  mostrarFuerzas();
                 mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
             if (fuerzas.length > 1) {
+
                 F34.unshift(positionCero);
                 mostrarArrayEnDOM(F34, 'fuerzasResultF34');
                 mostrarArrayConIndice(PrediccionNum, F34);
               
-                console.log("Fuerzas", fuerzas);
-                console.log("F34", F34);
              }
  
 
@@ -1096,13 +1079,13 @@ case 35:
                  mostrarArraysF( registerF35, 'F35');
                  //  mostrarFuerzas();
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
              if (fuerzas.length > 1) {
+
                  F35.unshift(positionCero);
                  mostrarArrayEnDOM(F35, 'fuerzasResultF35');
                  mostrarArrayConIndice(PrediccionNum, F35);
            
-                 console.log("Fuerzas", fuerzas);
-                 console.log("F35", F35);
               }
                  
 
@@ -1115,13 +1098,13 @@ case 36:
                  mostrarArraysF( registerF36, 'F36');
                  //  mostrarFuerzas(); 
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
              if (fuerzas.length > 1) {
+
                  F36.unshift(positionCero);
                  mostrarArrayEnDOM(F36, 'fuerzasResultF36');
                  mostrarArrayConIndice(PrediccionNum, F36);
                 
-                 console.log("Fuerzas", fuerzas);
-                 console.log("F36", F36);
               }
                 
 
@@ -1130,18 +1113,18 @@ case 36:
 
 case 37:
 
-                 // Llenamos registerF0 con el contador para marcar el tiempo 
+                // Llenamos registerF0 con el contador para marcar el tiempo 
                 registerF37.unshift(contEvent);
                 mostrarArraysF( registerF37, 'F37');
-                 //  mostrarFuerzas();
+                //  mostrarFuerzas();
                  mostrarArrayEnDOM(fuerzas, 'fuerzas');
+
              if (fuerzas.length > 1) {
+
                  F37.unshift(positionCero);
                  mostrarArrayEnDOM(F37, 'fuerzasResultF37');
                  mostrarArrayConIndice(PrediccionNum, F37);
            
-                 console.log("Fuerzas", fuerzas);
-                 console.log("F37", F37);
              }
                  
 
