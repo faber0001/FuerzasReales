@@ -9,6 +9,7 @@ function mostrarArrayEnDOM(array, elementId) {
 
 }
 
+
 // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
 function mostrarArrayEnDOM1(array, elementId, arrayName) {
     var arrayResultDiv = document.getElementById(elementId);
@@ -17,7 +18,9 @@ function mostrarArrayEnDOM1(array, elementId, arrayName) {
     console.log(arrayResultDiv);
 }
 
+
 function incrementarContadorYMostrarEnDOM() {
+
     // Incrementa el contador
     contEvent++;
 
@@ -40,11 +43,6 @@ function mostrarArraysF(array, nombreArray) {
     // Imprime en consola el contenido actualizado del array
     console.log(mensaje);
 }
-//
-
-
-
-
 
 
 // Función para mostrar un array con un índice dado
@@ -75,7 +73,6 @@ function mostrarArrayConIndice(PrediccionNum, F) {
         console.log("Tamaño de probabilidad después de agregar predicciones", probabilidad.length);
         console.log("Contenido de probabilidad después de agregar predicciones", probabilidad);
 
-
         // Mostrar el array original en consola
         console.log("Array " + arrayName + ":", arrays[arrayName]);
 
@@ -85,17 +82,19 @@ function mostrarArrayConIndice(PrediccionNum, F) {
         console.error("El array no existe.");
     }
     mostrarArrayEnDOM1(predicciones, "PROBABILIDAD", arrayName);
+    
     // Retornar la variable 'predicciones' si es necesario utilizarla fuera de la función
     return predicciones;
 }
 
-// Variable global para almacenar el historial de aciertos
 
+// Variable global para almacenar el historial de aciertos
 function perfectHit() {
     let fuerza = fuerzas[1];
     console.log("history:", history, "probabilidad:", probabilidad);
 
     if (history.length > 0 && probabilidad.length > 0) {
+       
         if (history[0] === probabilidad[1]) {
             alert("Acierto real en el ingreso: " + contEvent + "  En el número " + history[0]);
             console.log("Acierto antes de cargar un nuevo elemento ", historialAciertos);
