@@ -392,19 +392,9 @@ case 37:
 
 
 
-
-
-
-
-
-
-
 function fuerzasReales(){
 var positionUno=fuerzas[1];
 var positionCero=fuerzas[0];
-
-
-
 
 
 switch(positionUno){
