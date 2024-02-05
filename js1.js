@@ -9,10 +9,10 @@ function mostrarArrayEnDOM(array, elementId) {
 
 }
 
-  // Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
+// Define la función mostrarArrayEnDOM con un parámetro adicional para el nombre del array
 function mostrarArrayEnDOM1(array, elementId, arrayName) {
     var arrayResultDiv = document.getElementById(elementId);
-    arrayResultDiv.innerHTML = 'Probabilidad  '+arrayName + ' = [' + array.join('-') + ']';
+    arrayResultDiv.innerHTML = 'Probabilidad  ' + arrayName + ' = [' + array.join('-') + ']';
     console.log('mostrarArrayEnDOM() llamada para ' + elementId + ', array: ' + arrayName);
     console.log(arrayResultDiv);
 }
@@ -66,15 +66,15 @@ function mostrarArrayConIndice(PrediccionNum, F) {
             // Agregar el valor a la variable 'predicciones'
             predicciones.push(valor);
         }
-         // Agregar el contenido de predicciones al inicio de probabilidad sin borrar el contenido actual
-          probabilidad = [...predicciones, ...probabilidad];
-          console.log("probabilidad???",probabilidad);
-          mostrarArrayEnDOM(probabilidad, "histpre");
+        // Agregar el contenido de predicciones al inicio de probabilidad sin borrar el contenido actual
+        probabilidad = [...predicciones, ...probabilidad];
+        console.log("probabilidad???", probabilidad);
+        mostrarArrayEnDOM(probabilidad, "histpre");
 
-    // Imprimir el tamaño y contenido del array probabilidad
-    console.log("Tamaño de probabilidad después de agregar predicciones", probabilidad.length);
-    console.log("Contenido de probabilidad después de agregar predicciones", probabilidad);
-        
+        // Imprimir el tamaño y contenido del array probabilidad
+        console.log("Tamaño de probabilidad después de agregar predicciones", probabilidad.length);
+        console.log("Contenido de probabilidad después de agregar predicciones", probabilidad);
+
 
         // Mostrar el array original en consola
         console.log("Array " + arrayName + ":", arrays[arrayName]);
@@ -84,7 +84,7 @@ function mostrarArrayConIndice(PrediccionNum, F) {
     } else {
         console.error("El array no existe.");
     }
-    mostrarArrayEnDOM1(predicciones, "PROBABILIDAD",arrayName);
+    mostrarArrayEnDOM1(predicciones, "PROBABILIDAD", arrayName);
     // Retornar la variable 'predicciones' si es necesario utilizarla fuera de la función
     return predicciones;
 }
@@ -100,7 +100,7 @@ function perfectHit() {
     if (history.length > 0 && probabilidad.length > 0) {
         if (history[0] === probabilidad[1]) {
             alert("Acierto real en el ingreso: " + contEvent + "  En el número " + history[0]);
-            console.log("Acierto antes de cargar un nuevo elemento ",  historialAciertos);
+            console.log("Acierto antes de cargar un nuevo elemento ", historialAciertos);
 
             historialAciertos.unshift(["T", contEvent, "  F", fuerza]);
             console.log("Historial de aciertos: ", historialAciertos);
