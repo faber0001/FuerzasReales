@@ -2,6 +2,7 @@
 var cantidadDatos;
 var numGuia;
 let PrediccionNum ;
+let historialAciertos = [];
 var resultados = [];
 var fuerzas = [];
 let registerF = [];
@@ -161,7 +162,7 @@ function consultarNumero() {
     //imporimi array hisstory en DON
     mostrarArrayEnDOM(history, "history");
 
-    perfectHit();
+    
     
 
       
@@ -414,6 +415,7 @@ switch(positionUno){
             F0.unshift(positionCero);
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
             mostrarArrayConIndice(PrediccionNum, F0);
+            perfectHit();
             
         } 
 
@@ -432,6 +434,7 @@ switch(positionUno){
             F1.unshift(positionCero);
             mostrarArrayEnDOM(F1, 'fuerzasResultF1');
             mostrarArrayConIndice(PrediccionNum, F1);
+            perfectHit();
       
         }
           
@@ -448,6 +451,7 @@ switch(positionUno){
               F2.unshift(positionCero);
               mostrarArrayEnDOM(F2, 'fuerzasResultF2');
               mostrarArrayConIndice(PrediccionNum, F2);
+              perfectHit();
             
              
         }
@@ -466,6 +470,7 @@ switch(positionUno){
               F3.unshift(positionCero);
               mostrarArrayEnDOM(F3, 'fuerzasResultF3');
               mostrarArrayConIndice(PrediccionNum, F3);
+              perfectHit();
          
        }
              
@@ -484,6 +489,7 @@ case 4:
               F4.unshift(positionCero);
               mostrarArrayEnDOM(F4, 'fuerzasResultF4');
               mostrarArrayConIndice(PrediccionNum, F4);
+              perfectHit();
      
        }
                
@@ -502,6 +508,7 @@ case 5:
             F5.unshift(positionCero);
             mostrarArrayEnDOM(F5, 'fuerzasResultF5');
             mostrarArrayConIndice(PrediccionNum, F5);
+            perfectHit();
          
        }
             
@@ -520,6 +527,7 @@ case 6:
            F6.unshift(positionCero);
            mostrarArrayEnDOM(F6, 'fuerzasResultF6');
            mostrarArrayConIndice(PrediccionNum, F6);
+           perfectHit();
     
        }
            
@@ -539,6 +547,7 @@ case 6:
            F7.unshift(positionCero);
            mostrarArrayEnDOM(F7, 'fuerzasResultF7');
            mostrarArrayConIndice(PrediccionNum, F7);
+           perfectHit();
  
         }
            
@@ -561,6 +570,7 @@ case 8:
            F8.unshift(positionCero);
            mostrarArrayEnDOM(F8, 'fuerzasResultF8');
            mostrarArrayConIndice(PrediccionNum, F8);
+           perfectHit();
          
        }
            
@@ -580,6 +590,7 @@ case 9:
             F9.unshift(positionCero);
             mostrarArrayEnDOM(F9, 'fuerzasResultF9');
             mostrarArrayConIndice(PrediccionNum, F9);
+            perfectHit();
         
        }
 
@@ -599,6 +610,7 @@ case 10:
             F10.unshift(positionCero);
             mostrarArrayEnDOM(F10, 'fuerzasResultF10');
             mostrarArrayConIndice(PrediccionNum, F10);
+            perfectHit();
            
         }
             
@@ -618,6 +630,7 @@ case 11:
             F11.unshift(positionCero);
             mostrarArrayEnDOM(F11, 'fuerzasResultF11');
             mostrarArrayConIndice(PrediccionNum, F11);
+            perfectHit();
          
         }
             
@@ -637,6 +650,7 @@ case 12:
             F12.unshift(positionCero);
             mostrarArrayEnDOM(F12, 'fuerzasResultF12');
             mostrarArrayConIndice(PrediccionNum, F12);
+            perfectHit();
          
         }
             
@@ -656,6 +670,7 @@ case 13:
             F13.unshift(positionCero);
             mostrarArrayEnDOM(F13, 'fuerzasResultF13');
             mostrarArrayConIndice(PrediccionNum, F13);
+            perfectHit();
        
         }
             
@@ -675,6 +690,7 @@ case 14:
             F14.unshift(positionCero);
             mostrarArrayEnDOM(F14, 'fuerzasResultF14');
             mostrarArrayConIndice(PrediccionNum, F14);
+            perfectHit();
       
         }
             
@@ -694,6 +710,7 @@ case 15:
             F15.unshift(positionCero);
             mostrarArrayEnDOM(F15, 'fuerzasResultF15');
             mostrarArrayConIndice(PrediccionNum, F15);
+            perfectHit();
         
         }
             
@@ -713,6 +730,7 @@ case 16:
              F16.unshift(positionCero);
              mostrarArrayEnDOM(F16, 'fuerzasResultF16');
              mostrarArrayConIndice(PrediccionNum, F16);
+             perfectHit();
           
          }
           
@@ -732,6 +750,7 @@ case 17:
              F17.unshift(positionCero);
              mostrarArrayEnDOM(F17, 'fuerzasResultF17');
              mostrarArrayConIndice(PrediccionNum, F17);
+             perfectHit();
           
          }
         
@@ -751,6 +770,7 @@ case 17:
                 F18.unshift(positionCero);
                 mostrarArrayEnDOM(F18, 'fuerzasResultF18');
                 mostrarArrayConIndice(PrediccionNum, F18);
+                perfectHit();
         
             }
         
@@ -772,6 +792,7 @@ case 17:
                 F19.unshift(positionCero);
                 mostrarArrayEnDOM(F19, 'fuerzasResultF19');
                 mostrarArrayConIndice(PrediccionNum, F19);
+                perfectHit();
       
             }
           
@@ -790,6 +811,7 @@ case 20:
               F20.unshift(positionCero);
               mostrarArrayEnDOM(F20, 'fuerzasResultF20');
               mostrarArrayConIndice(PrediccionNum, F20);
+              perfectHit();
         
           }
        
@@ -809,6 +831,7 @@ case 21:
               F21.unshift(positionCero);
               mostrarArrayEnDOM(F21, 'fuerzasResultF21');
               mostrarArrayConIndice(PrediccionNum, F21);
+              perfectHit();
          
            }
             
@@ -828,6 +851,7 @@ case 22:
               F22.unshift(positionCero);
               mostrarArrayEnDOM(F22, 'fuerzasResultF22');
               mostrarArrayConIndice(PrediccionNum, F22);
+              perfectHit();
         
           }
            
@@ -847,6 +871,7 @@ case 23:
               F23.unshift(positionCero);
               mostrarArrayEnDOM(F23, 'fuerzasResultF23');
               mostrarArrayConIndice(PrediccionNum, F23);
+              perfectHit();
           
           }
             
@@ -866,6 +891,7 @@ case 24:
                F24.unshift(positionCero);
                mostrarArrayEnDOM(F24, 'fuerzasResultF24');
                mostrarArrayConIndice(PrediccionNum, F24);
+               perfectHit();
              
             }
               
@@ -885,6 +911,7 @@ case 25:
                F25.unshift(positionCero);
                mostrarArrayEnDOM(F25, 'fuerzasResultF25');
                mostrarArrayConIndice(PrediccionNum, F25);
+               perfectHit();
             
             }
             
@@ -904,6 +931,7 @@ case 26:
                F26.unshift(positionCero);
                mostrarArrayEnDOM(F26, 'fuerzasResultF26');
                mostrarArrayConIndice(PrediccionNum, F26);
+               perfectHit();
          
             }
 
@@ -924,6 +952,7 @@ case 27:
                F27.unshift(positionCero);
                mostrarArrayEnDOM(F27, 'fuerzasResultF27');
                mostrarArrayConIndice(PrediccionNum, F27);
+               perfectHit();
         
             }
 
@@ -942,6 +971,7 @@ case 28:
                F28.unshift(positionCero);
                mostrarArrayEnDOM(F28, 'fuerzasResultF28');
                mostrarArrayConIndice(PrediccionNum, F28);
+               perfectHit();
           
            }
              
@@ -961,6 +991,7 @@ case 29:
                F29.unshift(positionCero);
                mostrarArrayEnDOM(F29, 'fuerzasResultF29');
                mostrarArrayConIndice(PrediccionNum, F29);
+               perfectHit();
           
             }
                
@@ -980,6 +1011,7 @@ case 30:
                F30.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
                mostrarArrayConIndice(PrediccionNum, F30);
+               perfectHit();
            
            }
               
@@ -999,6 +1031,7 @@ case 31:
                F31.unshift(positionCero);
                mostrarArrayEnDOM(F31, 'fuerzasResultF31');
                mostrarArrayConIndice(PrediccionNum, F31);
+               perfectHit();
  
             }
         
@@ -1018,6 +1051,7 @@ case 32:
                F32.unshift(positionCero);
                mostrarArrayEnDOM(F32, 'fuerzasResultF32');
                mostrarArrayConIndice(PrediccionNum, F32);
+               perfectHit();
            
             }
              
@@ -1037,6 +1071,7 @@ case 33:
                 F33.unshift(positionCero);
                 mostrarArrayEnDOM(F33, 'fuerzasResultF33');
                 mostrarArrayConIndice(PrediccionNum, F33);
+                perfectHit();
               
             }
              
@@ -1056,6 +1091,7 @@ case 34:
                 F34.unshift(positionCero);
                 mostrarArrayEnDOM(F34, 'fuerzasResultF34');
                 mostrarArrayConIndice(PrediccionNum, F34);
+                perfectHit();
               
              }
  
@@ -1075,6 +1111,7 @@ case 35:
                  F35.unshift(positionCero);
                  mostrarArrayEnDOM(F35, 'fuerzasResultF35');
                  mostrarArrayConIndice(PrediccionNum, F35);
+                 perfectHit();
            
               }
                  
@@ -1094,6 +1131,7 @@ case 36:
                  F36.unshift(positionCero);
                  mostrarArrayEnDOM(F36, 'fuerzasResultF36');
                  mostrarArrayConIndice(PrediccionNum, F36);
+                 perfectHit();
                 
               }
                 
@@ -1114,6 +1152,7 @@ case 37:
                  F37.unshift(positionCero);
                  mostrarArrayEnDOM(F37, 'fuerzasResultF37');
                  mostrarArrayConIndice(PrediccionNum, F37);
+                 perfectHit();
            
              }
                  

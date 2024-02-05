@@ -89,15 +89,28 @@ function mostrarArrayConIndice(PrediccionNum, F) {
     return predicciones;
 }
 
+// Variable global para almacenar el historial de aciertos
 
-function perfectHit(){
- console.log("history :",history,"probabilidad :", probabilidad);
-if(history.length>0 && probabilidad.length>0){
-    if(history[0]===probabilidad[1]){
-        alert("Aciero Real en el ingreso : " + contEvent  + "  En el numero " +history[0]  );
+
+// Función perfectHit()
+function perfectHit() {
+    let fuerza = fuerzas[1];
+    console.log("history:", history, "probabilidad:", probabilidad);
+
+    if (history.length > 0 && probabilidad.length > 0) {
+        if (history[0] === probabilidad[1]) {
+            alert("Acierto real en el ingreso: " + contEvent + "  En el número " + history[0]);
+            console.log("Acierto antes de cargar un nuevo elemento ",  historialAciertos);
+
+            historialAciertos.unshift(["T", contEvent, "  F", fuerza]);
+            console.log("Historial de aciertos: ", historialAciertos);
+            mostrarArrayEnDOM(historialAciertos, "Acierto");
+
+        }
     }
 }
 
 
 
-}
+
+
