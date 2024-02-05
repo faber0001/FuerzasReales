@@ -148,12 +148,20 @@ function consultarNumero() {
         // Salir de la función
         return;
     }
+    
+    
+    
+
+    
+    
     //agregue inNum a la  variable global PrediccionNum;
     PrediccionNum=inNum;
     //ilnlgreso dztos a  array history[];
     history.unshift(inNum);
     //imporimi array hisstory en DON
     mostrarArrayEnDOM(history, "history");
+
+    perfectHit();
     
 
       
@@ -407,11 +415,14 @@ switch(positionUno){
             // Llenamos registerF0 con el contador para marcar el tiempo 
             registerF0.unshift(contEvent);
             mostrarArraysF( registerF0, 'F0');
-           console.log("registroFuerza0",registerF0);
+            console.log("registroFuerza0",registerF0);
             mostrarArrayEnDOM(fuerzas, 'fuerzas');
+            
         if (fuerzas.length > 1) {
             F0.unshift(positionCero);
             mostrarArrayEnDOM(F0, 'fuerzasResultF0');
+            //mira la concidencia enfre fuerzasposioion 0 y probalidadses posicion 0
+            perfectHit();
             // Ejemplo de uso con PrediccionNum = 1
             console.log("NUmero de entrada Fuerzareales   "+PrediccionNum);
             mostrarArrayConIndice(PrediccionNum, F0);
@@ -421,16 +432,16 @@ switch(positionUno){
         break;
 
     case 1:
-             // Llenamos registerF0 con el contador para marcar el tiempo 
-             registerF1.unshift(contEvent);
-             mostrarArraysF( registerF1, 'F1');
-             //MUESTRA EL CONTENIDO  DEL ARRAY FUERZAS
+            // Llenamos registerF0 con el contador para marcar el tiempo 
+            registerF1.unshift(contEvent);
+            mostrarArraysF( registerF1, 'F1');
+            //MUESTRA EL CONTENIDO  DEL ARRAY FUERZAS
             mostrarArrayEnDOM(fuerzas, 'fuerzas'); 
         if (fuerzas.length > 1) {
             F1.unshift(positionCero);
             mostrarArrayEnDOM(F1, 'fuerzasResultF1');
             mostrarArrayConIndice(PrediccionNum, F1);
-            prediccion();
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F1", F1);
         }
@@ -448,6 +459,8 @@ switch(positionUno){
               F2.unshift(positionCero);
               mostrarArrayEnDOM(F2, 'fuerzasResultF2');
               mostrarArrayConIndice(PrediccionNum, F2);
+             //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F2", F2);
         }
@@ -466,6 +479,8 @@ switch(positionUno){
               F3.unshift(positionCero);
               mostrarArrayEnDOM(F3, 'fuerzasResultF3');
               mostrarArrayConIndice(PrediccionNum, F3);
+              //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F3", F3);
        }
@@ -483,6 +498,8 @@ case 4:
               F4.unshift(positionCero);
               mostrarArrayEnDOM(F4, 'fuerzasResultF4');
               mostrarArrayConIndice(PrediccionNum, F4);
+              //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F4", F4);
        }
@@ -500,6 +517,8 @@ case 5:
             F5.unshift(positionCero);
             mostrarArrayEnDOM(F5, 'fuerzasResultF5');
             mostrarArrayConIndice(PrediccionNum, F5);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F5", F5);
        }
@@ -517,6 +536,8 @@ case 6:
            F6.unshift(positionCero);
            mostrarArrayEnDOM(F6, 'fuerzasResultF6');
            mostrarArrayConIndice(PrediccionNum, F6);
+           //arrat de aciertos
+           perfectHit();
            console.log("Fuerzas", fuerzas);
            console.log("F6", F6);
        }
@@ -535,6 +556,8 @@ case 6:
            F7.unshift(positionCero);
            mostrarArrayEnDOM(F7, 'fuerzasResultF7');
            mostrarArrayConIndice(PrediccionNum, F7);
+           //arrat de aciertos
+           perfectHit();
            console.log("Fuerzas", fuerzas);
            console.log("F7", F7);
         }
@@ -556,6 +579,8 @@ case 8:
            F8.unshift(positionCero);
            mostrarArrayEnDOM(F8, 'fuerzasResultF8');
            mostrarArrayConIndice(PrediccionNum, F8);
+           //arrat de aciertos
+           perfectHit();
            console.log("Fuerzas", fuerzas);
            console.log("F8", F8);
        }
@@ -574,6 +599,8 @@ case 9:
             F9.unshift(positionCero);
             mostrarArrayEnDOM(F9, 'fuerzasResultF9');
             mostrarArrayConIndice(PrediccionNum, F9);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F9", F9);
        }
@@ -592,6 +619,8 @@ case 10:
             F10.unshift(positionCero);
             mostrarArrayEnDOM(F10, 'fuerzasResultF10');
             mostrarArrayConIndice(PrediccionNum, F10);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F10", F10);
         }
@@ -610,6 +639,8 @@ case 11:
             F11.unshift(positionCero);
             mostrarArrayEnDOM(F11, 'fuerzasResultF11');
             mostrarArrayConIndice(PrediccionNum, F11);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F11", F11);
         }
@@ -628,6 +659,8 @@ case 12:
             F12.unshift(positionCero);
             mostrarArrayEnDOM(F12, 'fuerzasResultF12');
             mostrarArrayConIndice(PrediccionNum, F12);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F12", F12);
         }
@@ -647,6 +680,8 @@ case 13:
             F13.unshift(positionCero);
             mostrarArrayEnDOM(F13, 'fuerzasResultF13');
             mostrarArrayConIndice(PrediccionNum, F13);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F13", F13);
         }
@@ -666,6 +701,8 @@ case 14:
             F14.unshift(positionCero);
             mostrarArrayEnDOM(F14, 'fuerzasResultF14');
             mostrarArrayConIndice(PrediccionNum, F14);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F14", F14);
         }
@@ -685,6 +722,8 @@ case 15:
             F15.unshift(positionCero);
             mostrarArrayEnDOM(F15, 'fuerzasResultF15');
             mostrarArrayConIndice(PrediccionNum, F15);
+            //arrat de aciertos
+            perfectHit();
             console.log("Fuerzas", fuerzas);
             console.log("F15", F15);
         }
@@ -704,6 +743,8 @@ case 16:
              F16.unshift(positionCero);
              mostrarArrayEnDOM(F16, 'fuerzasResultF16');
              mostrarArrayConIndice(PrediccionNum, F16);
+             //arrat de aciertos
+             perfectHit();
              console.log("Fuerzas", fuerzas);
              console.log("F16", F16);
          }
@@ -723,8 +764,10 @@ case 17:
              F17.unshift(positionCero);
              mostrarArrayEnDOM(F17, 'fuerzasResultF17');
              mostrarArrayConIndice(PrediccionNum, F17);
-              console.log("Fuerzas", fuerzas);
-              console.log("F17", F17);
+             //arrat de aciertos
+             perfectHit();
+             console.log("Fuerzas", fuerzas);
+             console.log("F17", F17);
          }
         
 
@@ -741,6 +784,8 @@ case 17:
                 F18.unshift(positionCero);
                 mostrarArrayEnDOM(F18, 'fuerzasResultF18');
                 mostrarArrayConIndice(PrediccionNum, F18);
+                //arrat de aciertos
+                perfectHit();              
                 console.log("Fuerzas", fuerzas);
                 console.log("F18", F18);
             }
@@ -761,6 +806,8 @@ case 17:
                 F19.unshift(positionCero);
                 mostrarArrayEnDOM(F19, 'fuerzasResultF19');
                 mostrarArrayConIndice(PrediccionNum, F19);
+                //arrat de aciertos
+                perfectHit();
                 console.log("Fuerzas", fuerzas);
                 console.log("F19", F19);
             }
@@ -778,6 +825,8 @@ case 20:
               F20.unshift(positionCero);
               mostrarArrayEnDOM(F20, 'fuerzasResultF20');
               mostrarArrayConIndice(PrediccionNum, F20);
+              //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F20", F20);
           }
@@ -798,6 +847,8 @@ case 21:
               F21.unshift(positionCero);
               mostrarArrayEnDOM(F21, 'fuerzasResultF21');
               mostrarArrayConIndice(PrediccionNum, F21);
+              //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F21", F21);
            }
@@ -817,6 +868,8 @@ case 22:
               F22.unshift(positionCero);
               mostrarArrayEnDOM(F22, 'fuerzasResultF22');
               mostrarArrayConIndice(PrediccionNum, F22);
+              //arrat de aciertos
+              perfectHit();
               console.log("Fuerzas", fuerzas);
               console.log("F22", F22);
           }
@@ -836,6 +889,8 @@ case 23:
               F23.unshift(positionCero);
               mostrarArrayEnDOM(F23, 'fuerzasResultF23');
               mostrarArrayConIndice(PrediccionNum, F23);
+              //arrat de aciertos
+              perfectHit();  
               console.log("Fuerzas", fuerzas);
               console.log("F23", F23);
           }
@@ -855,6 +910,8 @@ case 24:
                F24.unshift(positionCero);
                mostrarArrayEnDOM(F24, 'fuerzasResultF24');
                mostrarArrayConIndice(PrediccionNum, F24);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F24", F24);
             }
@@ -873,6 +930,8 @@ case 25:
                F25.unshift(positionCero);
                mostrarArrayEnDOM(F25, 'fuerzasResultF25');
                mostrarArrayConIndice(PrediccionNum, F25);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F25", F25);
             }
@@ -891,6 +950,8 @@ case 26:
                F26.unshift(positionCero);
                mostrarArrayEnDOM(F26, 'fuerzasResultF26');
                mostrarArrayConIndice(PrediccionNum, F26);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F26", F26);
             }
@@ -910,6 +971,8 @@ case 27:
                F27.unshift(positionCero);
                mostrarArrayEnDOM(F27, 'fuerzasResultF27');
                mostrarArrayConIndice(PrediccionNum, F27);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F27", F27);
             }
@@ -928,6 +991,8 @@ case 28:
                F28.unshift(positionCero);
                mostrarArrayEnDOM(F28, 'fuerzasResultF28');
                mostrarArrayConIndice(PrediccionNum, F28);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F28", F28);
            }
@@ -947,6 +1012,8 @@ case 29:
                F29.unshift(positionCero);
                mostrarArrayEnDOM(F29, 'fuerzasResultF29');
                mostrarArrayConIndice(PrediccionNum, F29);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F29", F29);
             }
@@ -965,6 +1032,8 @@ case 30:
                F30.unshift(positionCero);
                mostrarArrayEnDOM(F30, 'fuerzasResultF30');
                mostrarArrayConIndice(PrediccionNum, F30);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F30", F30);
            }
@@ -983,6 +1052,8 @@ case 31:
                F31.unshift(positionCero);
                mostrarArrayEnDOM(F31, 'fuerzasResultF31');
                mostrarArrayConIndice(PrediccionNum, F31);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F31", F31);
             }
@@ -1001,6 +1072,8 @@ case 32:
                F32.unshift(positionCero);
                mostrarArrayEnDOM(F32, 'fuerzasResultF32');
                mostrarArrayConIndice(PrediccionNum, F32);
+               //arrat de aciertos
+               perfectHit();  
                console.log("Fuerzas", fuerzas);
                console.log("F32", F32);
             }
@@ -1019,6 +1092,8 @@ case 33:
                 F33.unshift(positionCero);
                 mostrarArrayEnDOM(F33, 'fuerzasResultF33');
                 mostrarArrayConIndice(PrediccionNum, F33);
+                //arrat de aciertos
+                perfectHit();  
                 console.log("Fuerzas", fuerzas);
                 console.log("F33", F33);
             }
@@ -1037,6 +1112,8 @@ case 34:
                 F34.unshift(positionCero);
                 mostrarArrayEnDOM(F34, 'fuerzasResultF34');
                 mostrarArrayConIndice(PrediccionNum, F34);
+                //arrat de aciertos
+                perfectHit();  
                 console.log("Fuerzas", fuerzas);
                 console.log("F34", F34);
              }
@@ -1055,6 +1132,8 @@ case 35:
                  F35.unshift(positionCero);
                  mostrarArrayEnDOM(F35, 'fuerzasResultF35');
                  mostrarArrayConIndice(PrediccionNum, F35);
+                 //arrat de aciertos
+                 perfectHit();  
                  console.log("Fuerzas", fuerzas);
                  console.log("F35", F35);
               }
@@ -1073,6 +1152,8 @@ case 36:
                  F36.unshift(positionCero);
                  mostrarArrayEnDOM(F36, 'fuerzasResultF36');
                  mostrarArrayConIndice(PrediccionNum, F36);
+                 //arrat de aciertos
+                 perfectHit();  
                  console.log("Fuerzas", fuerzas);
                  console.log("F36", F36);
               }
@@ -1092,6 +1173,8 @@ case 37:
                  F37.unshift(positionCero);
                  mostrarArrayEnDOM(F37, 'fuerzasResultF37');
                  mostrarArrayConIndice(PrediccionNum, F37);
+                 //arrat de aciertos
+                 perfectHit();  
                  console.log("Fuerzas", fuerzas);
                  console.log("F37", F37);
              }

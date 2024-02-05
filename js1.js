@@ -90,3 +90,14 @@ function mostrarArrayConIndice(PrediccionNum, F) {
 }
 
 
+function perfectHit(){
+ console.log("history :",history,"probabilidad :", probabilidad);
+if(history.length>0 && probabilidad.length>0){
+    if(history[0]===probabilidad[0]){
+        alert("Aciero Real en el ingreso : " + contEvent  + "En el numero " +history[0]  );
+    }
+}
+
+
+
+}
