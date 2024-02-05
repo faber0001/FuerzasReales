@@ -91,8 +91,6 @@ function mostrarArrayConIndice(PrediccionNum, F) {
 
 // Variable global para almacenar el historial de aciertos
 
-
-// Función perfectHit()
 function perfectHit() {
     let fuerza = fuerzas[1];
     console.log("history:", history, "probabilidad:", probabilidad);
@@ -102,13 +100,13 @@ function perfectHit() {
             alert("Acierto real en el ingreso: " + contEvent + "  En el número " + history[0]);
             console.log("Acierto antes de cargar un nuevo elemento ", historialAciertos);
 
-            historialAciertos.unshift(["T", contEvent, "  F", fuerza]);
+            historialAciertos.unshift(["Registro ", contEvent, "  Fuerza ", fuerza]);
             console.log("Historial de aciertos: ", historialAciertos);
             mostrarArrayEnDOM(historialAciertos, "Acierto");
-
         }
     }
 }
+
 
 
 
