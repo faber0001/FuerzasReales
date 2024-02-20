@@ -1,18 +1,23 @@
 // Definir la contraseña deseada
 var contrasenaGuardada = "1023";
 
-do {
+// Bucle para solicitar la contraseña hasta que sea correcta
+while (true) {
     // Solicitar al usuario que ingrese la contraseña
     var passwordUsuario = prompt("Por favor, ingrese la contraseña:");
 
     // Verificar si la contraseña ingresada es correcta
     if (passwordUsuario === contrasenaGuardada) {
         alert("Contraseña correcta. Puedes continuar con el programa.");
-        break; // Salir del bucle cuando la contraseña es correcta
+        // Salir del bucle cuando la contraseña es correcta
+        break;
     } else {
         alert("Contraseña incorrecta. Vuelve a intentar.");
     }
-} while (true); // El bucle se repetirá hasta que la contraseña sea correcta
+}
+
+// Código principal del programa aquí
+console.log("¡Bienvenido al programa!");
 
 var cantidadDatos;
 var numGuia;
