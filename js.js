@@ -1,20 +1,19 @@
+// Definir la contraseña deseada
+var contrasenaGuardada = "1023";
 
-    // Definir la contraseña requerida para acceder al proyecto
-    var password = "tucontraseña";
+do {
+    // Solicitar al usuario que ingrese la contraseña
+    var passwordUsuario = prompt("Por favor, ingrese la contraseña:");
 
-    // Pedir al usuario que ingrese la contraseña
-    var userPassword = prompt("Por favor, ingresa la contraseña para acceder al proyecto:");
-
-    // Verificar si la contraseña es correcta
-    if (userPassword === password) {
-        // Contraseña correcta, permitir acceso al proyecto
-        alert("¡Contraseña correcta! Bienvenido al proyecto.");
-        // Aquí puedes colocar el código para cargar tu proyecto o redireccionar a otra página
+    // Verificar si la contraseña ingresada es correcta
+    if (passwordUsuario === contrasenaGuardada) {
+        alert("Contraseña correcta. Puedes continuar con el programa.");
+        break; // Salir del bucle cuando la contraseña es correcta
     } else {
-        // Contraseña incorrecta, mostrar mensaje de error y redireccionar o tomar otra acción
-        alert("¡Contraseña incorrecta! Acceso denegado.");
-        // Aquí puedes colocar el código para redireccionar a otra página o realizar alguna otra acción
+        alert("Contraseña incorrecta. Vuelve a intentar.");
     }
+} while (true); // El bucle se repetirá hasta que la contraseña sea correcta
+
 var cantidadDatos;
 var numGuia;
 let PrediccionNum;
